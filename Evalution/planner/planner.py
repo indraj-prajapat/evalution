@@ -32,13 +32,13 @@ class TenderPlanner:
     Parameters:
         config: Full :class:`PlannerConfig` with LLM, retry, and validation
             settings.  If omitted, sensible defaults are used (requires
-            ``OPENAI_API_KEY`` environment variable or explicit key).
+            ``OPENROUTER_API_KEY`` environment variable or explicit key).
 
     Example::
 
         planner = TenderPlanner(
             config=PlannerConfig(
-                llm=LLMConfig(api_key="sk-...", model="gpt-4o"),
+                llm=LLMConfig(api_key="sk-...", model="openai/gpt-4o"),
             )
         )
         result = planner.plan(
