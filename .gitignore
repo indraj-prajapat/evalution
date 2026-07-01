@@ -1,16 +1,1 @@
-```
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.env
-.env.local
-.env.*
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.log
-*.tmp
-*.swp
-```
+Nothing should be ignored based on the provided file changes. The only modified file is a Python source file (`Evalution/verification_engine/data_point_validator.py`), which should not be added to .gitignore.
