@@ -1,3 +1,19 @@
+"""Modular Evaluation Pipeline with Debug Support.
+
+This is the main entry point for the evaluation pipeline, refactored into
+small, modular components with comprehensive debug logging capabilities.
+
+The pipeline accepts 4 inputs as usual:
+    1. tender_output_json: Tender output dict or path
+    2. company_json_path: Path to company JSON file
+    3. company_name: Human-readable company name
+    4. output_path: File path for final JSON report
+
+Plus an optional debug flag to enable detailed logging.
+
+All API keys and model names are read from .env file only - no hardcoded values.
+"""
+
 from __future__ import annotations
 
 import json
@@ -6,92 +22,40 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from copy import deepcopy
 from dataclasses import asdict, is_dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 
 from dotenv import load_dotenv
 
 from Evalution.client import DEFAULT_OPENROUTER_BASE_URL, get_llm_api_key, get_llm_model
-from Evalution.tender_extractor import extract_from_bid
-from Evalution.extraction_value_verifier import verify_extracted_values
-from Evalution.planner.config import LLMConfig, PlannerConfig, RetryConfig
 from Evalution.planner.logging_utils import configure_logging, get_logger
-from Evalution.planner.planner import TenderPlanner
-from Evalution.verification_engine.engine import run_verification as run_verification_engine
+from Evalution.debug_utils import DebugLogger, set_debug_logger, log_step
+
+# Import modular components
+from Evalution.pipeline_modules.input_loader import load_json_input, validate_key_points
+from Evalution.pipeline_modules.config_builder import (
+    build_planner_config,
+    build_planner_tender,
+    resolve_worker_count,
+)
+from Evalution.pipeline_modules.planner_module import plan_key_points
+from Evalution.pipeline_modules.evaluator_module import evaluate_planned_key_points
+from Evalution.pipeline_modules.output_builder import append_evaluations_to_key_points
+from Evalution.pipeline_modules.utils import to_json_dict, write_json, print_planner_outcomes
 
 load_dotenv()
-configure_logging(level="DEBUG")
-log = get_logger(__name__)
 
+# Default cache paths
+PLANNER_CACHE: str = "tender_plan_results.json"
+VERDICT_CACHE: str = "final_verdict.json"
+EVALUATION_CACHE: str = "evaluation_results.json"
 
-# Hardcoded inputs. The pipeline now reads the extracted tender output and
-# evaluates every key point inside it.
+# Hardcoded inputs for __main__ execution (not used in library imports)
 TENDER_OUTPUT_JSON_PATH: str = "tender_output.json"
 COMPANY_JSON_PATH: str = "kheria company.json"
 COMPANY_NAME: str = "M S Kheria & Company"
 OUTPUT_PATH: str = "evalution.json"
 
-PLANNER_CACHE: str = "tender_plan_results.json"
-VERDICT_CACHE: str = "final_verdict.json"
-EVALUATION_CACHE: str = "evaluation_results.json"
-
 DEFAULT_MAX_WORKERS: int = int(os.environ.get("EVALUATION_MAX_WORKERS", "4"))
-
-
-# ---------------------------------------------------------------------------
-# tender_output_json["key_points"] schema
-# ---------------------------------------------------------------------------
-# Each entry is expected to be an object shaped like:
-#   {
-#     "key_id" | "criterion_id" | "id": <str>,   # optional; a CRIT_### id is
-#                                                 # generated if absent
-#     "point" | "text": <non-empty str>,         # REQUIRED: the criterion
-#                                                 # text to plan/evaluate
-#     ...                                        # other fields are passed
-#                                                 # through untouched
-#   }
-#
-# This is the contract this pipeline stage expects from whatever produced
-# tender_output_json upstream (currently the tender extraction / Module 2
-# step, outside this file). If that stage's output shape changes, this
-# comment and _validate_key_points() below need to change together with it
-# -- there is currently no shared/versioned schema file both sides import,
-# so this doc comment is the source of truth until one exists.
-# ---------------------------------------------------------------------------
-
-
-def _validate_key_points(key_points: list[Any]) -> dict[int, str]:
-    """
-    Validate the minimal required shape of each key point BEFORE it enters
-    planning/evaluation.
-
-    Previously, `key_point.get("point") or key_point.get("text") or ""`
-    silently turned a missing/malformed key point into an empty-string
-    criterion, which the planner and verification engine would then process
-    as if it were a real (if odd) requirement -- producing a degenerate
-    verdict with no indication anything was actually wrong with the input.
-
-    Returns a mapping of {key_point index -> human-readable reason} for
-    every entry that fails validation. Entries not in the mapping are valid.
-    Nothing is dropped from `key_points` here -- callers are expected to
-    quarantine invalid indices (skip planning/evaluation for them) and
-    surface `errors[idx]` as an explicit failure for that one key point,
-    not abort the whole batch.
-    """
-    errors: dict[int, str] = {}
-    for idx, kp in enumerate(key_points):
-        if not isinstance(kp, dict):
-            errors[idx] = f"key_points[{idx}] is not a JSON object (got {type(kp).__name__})"
-            continue
-
-        text = kp.get("point") or kp.get("text")
-        if not isinstance(text, str) or not text.strip():
-            kp_id = _key_point_id(kp, idx)
-            errors[idx] = (
-                f"key_points[{idx}] (id={kp_id!r}) is missing a non-empty "
-                f"'point' or 'text' field"
-            )
-
-    return errors
 
 
 def run_pipeline(
@@ -99,10 +63,15 @@ def run_pipeline(
     company_json_path: str,
     company_name: str,
     output_path: str,
-    max_workers: int | None = None,
+    max_workers: Optional[int] = None,
+    debug: bool = False,
+    debug_save_dir: Optional[str] = None,
 ) -> dict[str, Any]:
     """
     End-to-end tender evaluation pipeline for all extracted key points.
+
+    This is the main pipeline function with modular structure and debug support.
+    All API keys and model names are read from .env file only - no hardcoded values.
 
     Parameters
     ----------
@@ -113,87 +82,200 @@ def run_pipeline(
     output_path       : File path where the final tender-shaped JSON report is written.
     max_workers       : Optional parallel worker count. Defaults to
         EVALUATION_MAX_WORKERS or 4.
+    debug             : Enable debug mode to log all inputs, outputs, and 
+        intermediate steps. Default False.
+    debug_save_dir    : Directory to save debug logs. Defaults to ./debug_logs.
 
     Returns
     -------
     dict
         The original tender output structure with verdict, summary, and
         matched_docuements appended to each key point.
+    
+    Example
+    -------
+    >>> result = run_pipeline(
+    ...     tender_output_json="tender_output.json",
+    ...     company_json_path="company.json",
+    ...     company_name="My Company",
+    ...     output_path="evaluation_result.json",
+    ...     debug=True,  # Enable debug logging
+    ... )
     """
-
-    tender_output = _load_json_input(tender_output_json, "tender_output_json")
-    key_points = tender_output.get("key_points", [])
-    if not isinstance(key_points, list):
-        raise ValueError("Expected tender_output_json['key_points'] to be a list")
-
-    validation_errors = _validate_key_points(key_points)
-    if validation_errors:
-        for idx, reason in validation_errors.items():
-            log.warning("key_point_validation_failed", index=idx, reason=reason)
-        log.warning(
-            "key_point_validation_summary",
-            malformed_count=len(validation_errors),
-            total_count=len(key_points),
-        )
-
-    worker_count = _resolve_worker_count(max_workers, len(key_points))
+    
+    # Initialize logging
+    configure_logging(level="DEBUG" if debug else "INFO")
+    log = get_logger(__name__)
+    
+    # Initialize debug logger
+    debug_logger = DebugLogger(enabled=debug, save_dir=debug_save_dir)
+    set_debug_logger(debug_logger)
+    
     log.info(
         "pipeline_start",
-        key_point_count=len(key_points),
-        max_workers=worker_count,
-    )
-
-    config = _build_planner_config()
-    planner_tender = _build_planner_tender(tender_output)
-
-    with open(company_json_path, "r", encoding="utf-8") as f:
-        company_data = json.load(f)
-
-    planning_results = _plan_key_points(
-        planner_tender=planner_tender,
-        config=config,
-        max_workers=worker_count,
-        skip_indices=set(validation_errors.keys()),
-    )
-    serialisable_results = _to_json_dict(planning_results)
-    _write_json(PLANNER_CACHE, serialisable_results)
-    log.info("planner_results_saved", path=PLANNER_CACHE)
-
-    _print_planner_outcomes(planning_results)
-
-    evaluation_results = _evaluate_planned_key_points(
-        planning_results=planning_results,
-        company_data=company_data,
+        debug_enabled=debug,
+        tender_input=str(tender_output_json)[:100],
+        company_path=company_json_path,
         company_name=company_name,
-        max_workers=worker_count,
+        output_path=output_path,
     )
+    
+    try:
+        # ================================================================
+        # Step 1: Load and validate tender output
+        # ================================================================
+        log_step("load_tender_output", {"input": tender_output_json}, None)
+        tender_output = load_json_input(tender_output_json, "tender_output_json")
+        log_step("load_tender_output", tender_output_json, tender_output)
+        
+        key_points = tender_output.get("key_points", [])
+        if not isinstance(key_points, list):
+            raise ValueError("Expected tender_output_json['key_points'] to be a list")
 
-    extraction_cache = [
-        item["extraction"]
-        for item in evaluation_results
-        if item.get("extraction") is not None
-    ]
-    verification_cache = [
-        item["verification"]
-        for item in evaluation_results
-        if item.get("verification") is not None
-    ]
-    _write_json(VERDICT_CACHE, extraction_cache)
-    _write_json(EVALUATION_CACHE, verification_cache)
-    log.info("verdict_saved", path=VERDICT_CACHE)
-    log.info("evaluation_results_saved", path=EVALUATION_CACHE)
+        validation_errors = validate_key_points(key_points)
+        if validation_errors:
+            for idx, reason in validation_errors.items():
+                log.warning("key_point_validation_failed", index=idx, reason=reason)
+            log.warning(
+                "key_point_validation_summary",
+                malformed_count=len(validation_errors),
+                total_count=len(key_points),
+            )
+        
+        log_step(
+            "validate_key_points",
+            {"key_points_count": len(key_points)},
+            {"validation_errors": validation_errors},
+        )
 
-    final_tender_output = _append_evaluations_to_key_points(
-        tender_output=tender_output,
-        planning_results=planning_results,
-        evaluation_results=evaluation_results,
-        validation_errors=validation_errors,
-    )
-    _write_json(output_path, final_tender_output)
+        # ================================================================
+        # Step 2: Resolve worker count and load company data
+        # ================================================================
+        worker_count = resolve_worker_count(max_workers, len(key_points))
+        log.info(
+            "pipeline_configuration",
+            key_point_count=len(key_points),
+            max_workers=worker_count,
+            debug_enabled=debug,
+        )
+        
+        log_step("load_company_data", {"path": company_json_path}, None)
+        with open(company_json_path, "r", encoding="utf-8") as f:
+            company_data = json.load(f)
+        log_step("load_company_data", company_json_path, company_data)
 
-    log.info("pipeline_complete", output_path=output_path)
-    print(f"\n[SUCCESS] Evaluation report saved to '{output_path}'")
-    return final_tender_output
+        # ================================================================
+        # Step 3: Build planner configuration and tender structure
+        # ================================================================
+        log_step("build_planner_config", {}, None)
+        config = build_planner_config()
+        log_step("build_planner_config", {}, config)
+        
+        log_step("build_planner_tender", {"tender_output_keys": list(tender_output.keys())}, None)
+        planner_tender = build_planner_tender(tender_output)
+        log_step("build_planner_tender", tender_output, planner_tender)
+
+        # ================================================================
+        # Step 4: Plan key points
+        # ================================================================
+        log_step(
+            "plan_key_points",
+            {
+                "criteria_count": len(planner_tender.get("key_points", [])),
+                "skip_indices": list(validation_errors.keys()),
+            },
+            None,
+        )
+        planning_results = plan_key_points(
+            planner_tender=planner_tender,
+            config=config,
+            max_workers=worker_count,
+            skip_indices=set(validation_errors.keys()),
+        )
+        serialisable_results = to_json_dict(planning_results)
+        log_step("plan_key_points", planner_tender, serialisable_results)
+        
+        # Save planner results cache
+        write_json(PLANNER_CACHE, serialisable_results)
+        log.info("planner_results_saved", path=PLANNER_CACHE)
+
+        # Print planner outcomes
+        print_planner_outcomes(planning_results)
+
+        # ================================================================
+        # Step 5: Evaluate planned key points
+        # ================================================================
+        log_step(
+            "evaluate_key_points",
+            {
+                "planning_results_count": len(planning_results),
+                "company_name": company_name,
+            },
+            None,
+        )
+        evaluation_results = evaluate_planned_key_points(
+            planning_results=planning_results,
+            company_data=company_data,
+            company_name=company_name,
+            max_workers=worker_count,
+        )
+        log_step("evaluate_key_points", planning_results, evaluation_results)
+
+        # Save caches
+        extraction_cache = [
+            item["extraction"]
+            for item in evaluation_results
+            if item.get("extraction") is not None
+        ]
+        verification_cache = [
+            item["verification"]
+            for item in evaluation_results
+            if item.get("verification") is not None
+        ]
+        write_json(VERDICT_CACHE, extraction_cache)
+        write_json(EVALUATION_CACHE, verification_cache)
+        log.info("verdict_saved", path=VERDICT_CACHE)
+        log.info("evaluation_results_saved", path=EVALUATION_CACHE)
+
+        # ================================================================
+        # Step 6: Build final output
+        # ================================================================
+        log_step(
+            "build_final_output",
+            {
+                "tender_output_keys": list(tender_output.keys()),
+                "planning_results_count": len(planning_results),
+                "evaluation_results_count": len(evaluation_results),
+            },
+            None,
+        )
+        final_tender_output = append_evaluations_to_key_points(
+            tender_output=tender_output,
+            planning_results=planning_results,
+            evaluation_results=evaluation_results,
+            validation_errors=validation_errors,
+        )
+        log_step("build_final_output", tender_output, final_tender_output)
+        
+        # Write final output
+        write_json(output_path, final_tender_output)
+
+        log.info("pipeline_complete", output_path=output_path)
+        print(f"\n[SUCCESS] Evaluation report saved to '{output_path}'")
+        
+        # Save debug summary if enabled
+        if debug:
+            debug_logger.save_summary()
+            print(f"[DEBUG] Debug logs saved to '{debug_logger.save_dir}'")
+        
+        return final_tender_output
+        
+    except Exception as e:
+        log.exception("pipeline_failed", error=str(e))
+        log_step("pipeline_error", {}, {"error": str(e)})
+        if debug:
+            debug_logger.save_summary()
+        raise
 
 
 def _build_planner_config() -> PlannerConfig:
@@ -588,9 +670,12 @@ def _print_planner_outcomes(results: list[Any]) -> None:
 
 
 if __name__ == "__main__":
+    # Run the pipeline with debug support
+    print("Running evaluation pipeline with debug support...")
     run_pipeline(
         tender_output_json=TENDER_OUTPUT_JSON_PATH,
         company_json_path=COMPANY_JSON_PATH,
         company_name=COMPANY_NAME,
         output_path=OUTPUT_PATH,
+        debug=True,  # Enable debug logging by default when running directly
     )

@@ -1,16 +1,48 @@
 ```
+# Backup files
+*.backup
+
+# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+
+# Logs
+*.log
+
+# Environment
 .env
 .env.local
 .env.*
-.DS_Store
-Thumbs.db
+
+# Dependencies
+.venv/
+venv/
+node_modules/
+
+# Build artifacts
+build/
+dist/
+target/
+
+# Coverage
+.coverage
+coverage/
+htmlcov/
+
+# Editors
 .vscode/
 .idea/
-*.log
-*.tmp
 *.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.mypy_cache/
+.pytest_cache/
+.gradle/
 ```
