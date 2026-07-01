@@ -30,6 +30,7 @@ from .criterion_parser import parse_criterion, RequirementCheck
 from .numeric_verifier import NumericVerifier
 from .entity_checker import EntityChecker
 from .ground_truth import GroundTruthSearcher
+from .data_point_validator import DataPointValidator
 
 
 class FactGenerator:
@@ -66,6 +67,7 @@ class FactGenerator:
         self._evidence_filter = EvidenceFilter(api_key=api_key, model=model)
         self._entity_checker = EntityChecker(company)
         self._numeric_verifier = NumericVerifier()
+        self._data_point_validator = DataPointValidator(api_key=api_key, model=model)
         self._generated_facts: list[VerifiedFact] = []
         self._criterion_requirements: list[dict] = []
         self._entity_check = None
@@ -491,14 +493,75 @@ class FactGenerator:
             if len(group_reqs) == 1:
                 req = group_reqs[0]
                 req_data_points = self._select_requirement_data_points(req, all_data_points)
-                num_result = self._numeric_verifier.verify_requirement(req, req_data_points)
-            else:
-                group_data_points = [
-                    self._select_requirement_data_points(req, all_data_points)
-                    for req in group_reqs
+                
+                # NEW STEP 8d: Validate data points with LLM before Python verification
+                # This ensures only correct, relevant data points reach the numeric verifier
+                validated_result = self._data_point_validator.validate_data_points(req, req_data_points)
+                
+                # Convert validated points back to the format numeric_verifier expects
+                validated_data_points = [
+                    {
+                        "field": vp.field,
+                        "value": vp.value,
+                        "is_numeric": vp.is_numeric,
+                        "period": vp.period,
+                        "source_doc": vp.source_doc,
+                        "document_name": vp.document_name,
+                        "snippet": vp.snippet,
+                        "page": vp.page,
+                    }
+                    for vp in validated_result.validated_points
                 ]
+                
+                # Record validation facts for audit trail
+                if validated_result.rejected_points:
+                    all_facts.append(self._make_fact(
+                        statement=(
+                            f"LLM validated data points for '{req.target}': "
+                            f"{len(validated_result.validated_points)} accepted, "
+                            f"{len(validated_result.rejected_points)} rejected. "
+                            f"Reason: {validated_result.selection_logic}"
+                        ),
+                        fact_type=FactType.COUNT.value,
+                        status=FactStatus.VERIFIED.value,
+                        details={
+                            "validation_method": validated_result.validation_method,
+                            "accepted_count": len(validated_result.validated_points),
+                            "rejected_count": len(validated_result.rejected_points),
+                            "selection_logic": validated_result.selection_logic,
+                            "rejected_reasons": [rp.rejection_reason for rp in validated_result.rejected_points[:5]],
+                        },
+                    ))
+                
+                # Now pass validated points to numeric verifier
+                num_result = self._numeric_verifier.verify_requirement(req, validated_data_points)
+            else:
+                # For OR-alternative groups, validate each alternative's data points
+                validated_group_results = []
+                validated_group_data_points = []
+                
+                for req in group_reqs:
+                    req_data_points = self._select_requirement_data_points(req, all_data_points)
+                    validated_result = self._data_point_validator.validate_data_points(req, req_data_points)
+                    validated_group_results.append(validated_result)
+                    
+                    validated_data_points = [
+                        {
+                            "field": vp.field,
+                            "value": vp.value,
+                            "is_numeric": vp.is_numeric,
+                            "period": vp.period,
+                            "source_doc": vp.source_doc,
+                            "document_name": vp.document_name,
+                            "snippet": vp.snippet,
+                            "page": vp.page,
+                        }
+                        for vp in validated_result.validated_points
+                    ]
+                    validated_group_data_points.append(validated_data_points)
+                
                 num_result = self._numeric_verifier.verify_requirement_group(
-                    group_reqs, group_data_points
+                    group_reqs, validated_group_data_points
                 )
             all_facts.extend(num_result.facts)
 
