@@ -121,7 +121,7 @@ Your task is to validate extracted data points and select ONLY the CORRECT ones 
 4. VALUE CONSISTENCY (AVOID DOUBLE COUNTING):
    - When multiple data points claim SAME field + SAME period with DIFFERENT values:
      * Select ONLY ONE most reliable source (see hierarchy below)
-     * Reject all others as "alternative_rejected" with reason "Duplicate value for {field} in {period}, selected more reliable source: {selected_source}"
+     * Reject all others as "alternative_rejected" with reason "Duplicate value for {{field}} in {{period}}, selected more reliable source: {{selected_source}}"
    - NEVER select multiple conflicting values for same field+period
 
 5. DOCUMENT RELIABILITY HIERARCHY (most to least reliable):
@@ -217,7 +217,7 @@ STEP 7 - ASSIGN CONFIDENCE:
   - Below 0.3: Reject instead
 
 STEP 8 - PROVIDE CLEAR REASONING:
-  - For accepted: "Field matches '{target_field}', period verified as {period} from {source}, value is valid number from {doc_type}"
+  - For accepted: "Field matches '{{target_field}}', period verified as {{period}} from {{source}}, value is valid number from {{doc_type}}"
   - For rejected: Be specific - "Rejected: snippet shows 'Total Assets' not turnover" or "Rejected: document is EMD certificate, doesn't contain turnover data" or "Rejected: period is FY2021-22 (from document name) but requirement needs FY2022-23"
 
 Respond in JSON format:
