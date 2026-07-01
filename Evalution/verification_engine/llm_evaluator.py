@@ -161,11 +161,13 @@ class LLMEvaluator:
 
     def __init__(
         self,
-        model: str = "gpt-4o-mini",
+        model: Optional[str] = None,
         api_key: Optional[str] = None,
         temperature: float = 0.1,
     ):
-        self.model = model
+        from Evalution.client import get_llm_model
+        
+        self.model = model or get_llm_model()
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY", "") or os.getenv("OPENAI_API_KEY", "")
         self.temperature = temperature
         self._client = None

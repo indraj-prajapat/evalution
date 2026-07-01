@@ -54,9 +54,13 @@ class FactGenerator:
         company: Optional[CompanyJSON] = None,
         ground_truth: Optional[GroundTruthSearcher] = None,
         api_key: Optional[str] = None,
-        model: str = "gpt-4o-mini",
+        model: Optional[str] = None,
         company_name: str = "",
     ):
+        from Evalution.client import get_llm_model
+        
+        resolved_model = model or get_llm_model()
+        
         self.module2 = module2
         self.company = company
         self.ground_truth = ground_truth
@@ -64,10 +68,10 @@ class FactGenerator:
         self._fact_counter = 0
         self._all_evidence: list[Evidence] = []
         self._related_evidence: list[Evidence] = []
-        self._evidence_filter = EvidenceFilter(api_key=api_key, model=model)
+        self._evidence_filter = EvidenceFilter(api_key=api_key, model=resolved_model)
         self._entity_checker = EntityChecker(company)
         self._numeric_verifier = NumericVerifier()
-        self._data_point_validator = DataPointValidator(api_key=api_key, model=model)
+        self._data_point_validator = DataPointValidator(api_key=api_key, model=resolved_model)
         self._generated_facts: list[VerifiedFact] = []
         self._criterion_requirements: list[dict] = []
         self._entity_check = None

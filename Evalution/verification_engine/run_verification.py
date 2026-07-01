@@ -39,11 +39,11 @@ def verify_criterion(
     company_name: str,
     output_path: str | None = None,
     api_key: str | None = None,
-    model: str = "gpt-4o-mini",
+    model: str | None = None,
     use_llm: bool = True,
 ) -> dict:
     """
-    Run the full verification pipeline (Python + GPT-4o-mini).
+    Run the full verification pipeline.
 
     Args:
         module2_json_path: Path to Module 2 extraction output JSON.
@@ -51,8 +51,8 @@ def verify_criterion(
         company_name: Name of the company being evaluated.
         output_path: If provided, save the report JSON to this path.
         api_key: OpenAI API key (loaded from .env if not provided).
-        model: OpenAI model name (default: gpt-4o-mini).
-        use_llm: Whether to use GPT-4o-mini (default: True).
+        model: Model name (defaults to OPENROUTER_MODEL from .env).
+        use_llm: Whether to use LLM (default: True).
 
     Returns:
         dict: The verification report as a dictionary.
