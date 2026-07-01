@@ -12,6 +12,7 @@ from dotenv import load_dotenv
 
 from Evalution.client import DEFAULT_OPENROUTER_BASE_URL, get_llm_api_key, get_llm_model
 from Evalution.tender_extractor import extract_from_bid
+from Evalution.extraction_value_verifier import verify_extracted_values
 from Evalution.planner.config import LLMConfig, PlannerConfig, RetryConfig
 from Evalution.planner.logging_utils import configure_logging, get_logger
 from Evalution.planner.planner import TenderPlanner
@@ -350,22 +351,70 @@ def _evaluate_one_key_point(
 ) -> dict[str, Any]:
     plan_data = _to_json_dict(planning_result.plan)
     criterion_id = planning_result.criterion_id
+    criterion_text = plan_data.get("criterion", "")
 
     try:
+        # ----------------------------------------------------------------
+        # Step 1: Extract values from documents (Module 2 / tender_extractor)
+        # ----------------------------------------------------------------
         extraction = extract_from_bid(
             company_json=company_data,
             tender_plan=plan_data,
         )
+
+        # ----------------------------------------------------------------
+        # Step 2: AI Value Verification Agent
+        # ----------------------------------------------------------------
+        # Before passing extracted values to the Python verification engine,
+        # use an AI agent (same LLM client) to verify which extracted values
+        # are CORRECT for the requirement.
+        #
+        # PROBLEM SOLVED: The extraction LLM sometimes tags wrong values
+        # (different year, different entity, different context). Previously
+        # ALL values (correct + wrong) were fed into NumericVerifier which
+        # computed sum/average/max across them — producing wrong results.
+        #
+        # This agent:
+        #   - Takes all values with their context (snippet, page, doc name)
+        #   - Asks the LLM which values are actually correct for this field
+        #   - Removes wrong values before they enter the Python module
+        #   - If no correct value exists, marks the field as missing
+        #   - NEVER guesses or hallucinates — only selects from existing values
+        # ----------------------------------------------------------------
+        log.info(
+            "value_verification_start",
+            criterion_id=criterion_id,
+        )
+
+        verified_extraction = verify_extracted_values(
+            extraction=extraction,
+            criterion_text=criterion_text,
+            api_key=get_llm_api_key(),
+            model=get_llm_model(),
+            base_url=os.environ.get(
+                "OPENROUTER_BASE_URL", DEFAULT_OPENROUTER_BASE_URL
+            ),
+        )
+
+        log.info(
+            "value_verification_complete",
+            criterion_id=criterion_id,
+        )
+
+        # ----------------------------------------------------------------
+        # Step 3: Run verification engine with VERIFIED values only
+        # ----------------------------------------------------------------
         verification_report = run_verification_engine(
-            module2_input=extraction,
+            module2_input=verified_extraction,
             company_json_input=company_data,
             company_name=company_name,
         )
         verification = verification_report.to_dict()
+
         return {
             "index": idx,
             "criterion_id": criterion_id,
-            "extraction": extraction,
+            "extraction": verified_extraction,
             "verification": verification,
             "error": None,
         }

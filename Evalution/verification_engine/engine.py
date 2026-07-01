@@ -64,18 +64,15 @@ class VerificationEngine:
     def __init__(
         self,
         api_key: Optional[str] = None,
-        model: Optional[str] = None,
+        model: str = "gpt-4o-mini",
         use_llm: bool = True,
     ):
-        from Evalution.client import get_llm_model
-        
         self.module2: Optional[Module2Output] = None
         self.company: Optional[CompanyJSON] = None
         self.ground_truth: Optional[GroundTruthSearcher] = None
         self.fact_generator: Optional[FactGenerator] = None
         self.use_llm = use_llm
-        resolved_model = model or get_llm_model()
-        self.llm_evaluator = LLMEvaluator(model=resolved_model, api_key=api_key) if use_llm else None
+        self.llm_evaluator = LLMEvaluator(model=model, api_key=api_key) if use_llm else None
 
     # -----------------------------------------------------------------------
     # Verdict Determination — Generic, no hardcoded domains
@@ -457,20 +454,12 @@ class VerificationEngine:
             )
 
         # ---- Steps 4-7: Fact Generation (LLM filter + page verify + entity check + numeric) ----
-        from Evalution.client import get_llm_model
-        
-        resolved_model_for_fact_gen = None
-        if self.llm_evaluator:
-            resolved_model_for_fact_gen = self.llm_evaluator.model
-        elif use_llm:
-            resolved_model_for_fact_gen = get_llm_model()
-        
         self.fact_generator = FactGenerator(
             self.module2,
             self.company,
             self.ground_truth,
             api_key=self.llm_evaluator.api_key if self.llm_evaluator else None,
-            model=resolved_model_for_fact_gen,
+            model=self.llm_evaluator.model if self.llm_evaluator else "gpt-4o-mini",
             company_name=company_name,
         )
 
@@ -645,14 +634,10 @@ def run_verification(
     company_name: str = "",
     output_path: Optional[Union[str, Path]] = None,
     api_key: Optional[str] = None,
-    model: Optional[str] = None,
+    model: str = "gpt-4o-mini",
     use_llm: bool = True,
 ) -> VerificationReport:
     """Convenience function to run verification."""
-    from Evalution.client import get_llm_model
-    
-    resolved_model = model or get_llm_model()
-    
     if isinstance(module2_input, (str, Path)):
         with open(module2_input, "r", encoding="utf-8") as f:
             module2_data = json.load(f)
@@ -667,7 +652,7 @@ def run_verification(
         else:
             company_data = company_json_input
 
-    engine = VerificationEngine(api_key=api_key, model=resolved_model, use_llm=use_llm)
+    engine = VerificationEngine(api_key=api_key, model=model, use_llm=use_llm)
     report = engine.run(module2_data, company_data, company_name=company_name)
 
     if output_path:

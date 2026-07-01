@@ -1,0 +1,60 @@
+{
+    "Kheria__Company_merged_with_Page_Numbers.pdf": {
+        "file_name": "Kheria__Company_merged_with_Page_Numbers.pdf",
+        "relative_path": "Kheria__Company_merged_with_Page_Numbers.pdf",
+        "summary": {
+            "total_pages": 61,
+            "documents_detected": 61
+        },
+        "documents": {
+            "source_file": "Kheria__Company_merged_with_Page_Numbers.pdf",
+            "total_pages": 61,
+            "documents_detected": 61,
+            "documents": [
+                {
+                    "doc_id": "doc_36",
+                    "doc_type": "certificate",
+                    "pages": [36],
+                    "page_span": {"start": 36, "end": 36},
+                    "confidence": {"overall": 0.9, "entity_confidence": 0.6, "page_confidence_avg": 0.9},
+                    "entities": {
+                        "company_name": "M/s. KHERIA & COMPANY",
+                        "document_id": "Regn. No.(F.R.N) 144903W",
+                        "date": "08 Aug 2018",
+                        "remarks": "Certificate of Admission as Partner"
+                    },
+                    "document_name": "Certificate of Admission as Partner – M/s. KHERIA & COMPANY – 08 Aug 2018",
+                    "summary": "Partner name: RAHUL; Membership type: FCA; Membership number: 175161."
+                },
+                {
+                    "doc_id": "doc_50",
+                    "doc_type": "form",
+                    "pages": [50],
+                    "page_span": {"start": 50, "end": 50},
+                    "confidence": {"overall": 0.9},
+                    "entities": {
+                        "company_name": "Kheria and Company",
+                        "date": "14/01/2026"
+                    },
+                    "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+                    "summary": "Form I details: Total staff 18. CISA/DISA Certified: 1. 5 Partners, 5 Qualified CA/CMA's, 3 Paid CA/CMA's. C&AG Empanelment: BO2078."
+                },
+                {
+                    "doc_id": "doc_51",
+                    "doc_type": "form",
+                    "pages": [51],
+                    "page_span": {"start": 51, "end": 51},
+                    "entities": {
+                        "company_name": "Kheria & Company"
+                    },
+                    "document_name": "Annexure-A – Details of Full Time Partners",
+                    "summary": "Partners: Rahul Sushil Kheria (175161, FCA), Gourav Sushil Kheria (175162, FCA), Neha G Kheria (429397, FCA), Rani Bajoria (450963, ACA), Abha Garg (575272, ACA)."
+                }
+            ]
+        },
+        "page_50": "Page 50 of 61\n\nKheria & Company\nChartered Accountants\nForm I- Details of Firm\n1. Name of the firm : Kheria and Company\n2. Address of the firm : 513/ Kosha Kommercial Komplex, Poddar Road, Malad [E], Mumbai-400097.\n3. Mobile no. : 9619831080\n4. E-mail address : kheriaandcompany@gmail.com\n5. No.of years in the business : 9 Years\nPAN No.: AATFK8871E\n6. Information about the firm for the past Seven years:\n\nS No. | Particulars | Details/No.\n1. | Number of Clients with Turnover exceeding 750 Crores | We have experience in Concurrent Audit of multiple Banks exceeding 750 Crores.\n2. | Total staff Strength including partners | \n | (a) Total number of Qualified CA/CMA's : | 5\n | (i) No. of Partners& Qualification(Proof to be enclosed) | 5\n | (ii) No. of Paid CA/CMA's Other than Partners | 3\n | b) No. of CISA/DISA Certified Partner/Qualified CA's\n(Enclose Certificate). | 1\n3. | Total number of Staff/ Articled Assessments: | 13\n | (i) No. of Inter-Qualified - | NA\n | (ii) No. of Graduate - | 13\n4. | C&AG Empanelment details(Enclose Proof) | BO2078\n5. | GST Registration Number(Enclose Certificate) | 27AATFK8871E1ZO\n6. | PAN(Enclose Copy) | AATFK8871E\n7. | Deed of Partnership | 25-12-2024\n8. | Any other document | MSME Attached\n\nThanking You,\nYours faithfully,\nKheria and Company,\nRahul Sushil Kheria\nChartered Accountants\n(Partner)\nMembership No:175161\nPlace: Mumbai\nDate: 14/01/2026\nOffice: 513, 5th Floor, Kosha Kommercial Komplex, Behind Laxmi Narayan Shopping Centre, Poddar Road, Malad (East), Mumbai-400 097, Mobile No. 9619831080;9321498143.\nEmail – kheriaandcompany@gmail.com\n1",
+        "page_51": "Page 51 of 61\n\nKheria & Company\nChartered Accountants\nAnnexure-A\nDetails of Full Time Partners of the Firm\n\nSl.No | Name of the Partner | Membership No. | Whether FCA / ACA | Date of joining the firm (full time) | Station & Region where residing at present\n1. | Rahul Sushil Kheria | 175161 | FCA | 26-07-2018 | Mumbai\n2. | Gourav Sushil Kheria | 175162 | FCA | 28-11-2016 | Mumbai\n3. | Neha G Kheria | 429397 | FCA | 31-08-2015 | Mumbai\n4. | Rani Bajoria | 450963 | ACA | 08-09-2020 | Thane\n5. | Abha Garg | 575272 | ACA | 03-12-2024 | Delhi NCR\n\nAnnexure-B\nParticulars of Branches (including foreign branches, if any)\n\n1. | Mumbai | 513/Kosha commercial Komplex,Poddar Road, Malad [E], Mumbai-97. 9619831080 | Rahul Sushil Kheria | 26-07-2018 | Mumbai\n2. | Mumbai | 513/Kosha commercial Komplex,Poddar Road, Malad [E], Mumbai-97. 9321498143 | Gourav Sushil Kheria | 28-11-2016 | Mumbai\n3. | Mumbai | 513/Kosha commercial Komplex,Poddar Road, Malad [E], Mumbai-97. 8340689051 | Neha Gourav Kheria | 31-08-2015 | Mumbai\n4. | Thane | Sunberry, 2602, Jija Mata nagar,sector 8 Ghansoli,Navi Mumbai-400701. 9334549770 | Rani Bajoria | 08-09-2020 | Thane\n5. | Delhi NCR | 424, 4 floor,Vipul Business Park,Sohna Road, Subhash Chowk, Gurugram, Haryana-122018. | Abha Garg | 03-12-2024 | Delhi NCR\n6. | West Bengal | Ram Pada Colony, Puruliya (M), Namopara, Puruliya,West Bengal-723101. 7602343446 | Puja Kejriwal | 28-12-2025 | Puruliya – West Bengal",
+        "page_53": "DEED OF PARTNERSHIP OF M/s. KHERIA AND COMPANY\n\nTHIS DEED OF PARTNERSHIP is made at Mumbai this 25th December, 2024 between, Neha Gourav Kheria (hereinafter referred to as \"the said Neha\") of the First Part, Rahul Sushil Kheria (hereinafter referred to as \"the said Rahul\") of the Second Part, Gourav Kheria (hereinafter referred to as \"the said Gourav\") of the Third Part, Rani Bajoria (hereinafter referred to as \"the said Rani\") of the Fourth Part, Abha Garg (hereinafter referred to as \"the said Abha\") of the Fifth Part, all the Indian Inhabitants of Mumbai, Bihar & Rajasthan.\n\nWHEREAS\n1. Pursuant to a Proprietorship dated 18th May 2017 the said Neha, were practicing and carrying on business as Chartered Accountants in the name and style and firm of M/s.\n\nSignatures: 1. NehaK 2. Bkheria 3. gkheri 4. Rani Bajoria 5. AbhaGarg\n\nSeal: KHERIA & COMPANY MUMBAI CHARTERED ACCOUNTANTS",
+        "page_54": "Page 54 of 61\n\n2. With effect from 08th August 2018 the said Rahul (who is a Chartered Accountant) has been admitted as partner of the said Firm on the terms and conditions herein contained.\n3. With effect from 30th December 2021 the said Gourav (who is a Chartered Accountant) has been admitted as partner of the said Firm on the terms and conditions herein contained.\n4. With effect from 25th December 2024 the said Rani & the said Abha (who are Chartered Accountants) have been admitted as partner of the said Firm on the terms and conditions herein contained.\n\nNOW THIS DEED OF PARTNERSHIP DOTH HEREBY RECORD AS UNDER:\n\n1. That the Partnership shall be deemed to have commenced with effect from the date of confirmation of Reconstitution of Firm by ICAI in the said firm name being M/s. Kheria & Company from the said premises being Office no. 513, 5th Floor, Kosha Kommmercial Komplex, Poddar Road, Behind Laxmi Narayan Shopping Centre, Malad East Mumbai 400 097."
+    }
+}

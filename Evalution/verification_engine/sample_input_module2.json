@@ -1,0 +1,290 @@
+{
+    "documents": [
+        {
+            "requirement_document": "CISA/DISA/DISSA Certificate",
+            "mode": "EXPLICIT",
+            "entity_type": "Certificate",
+            "matched_documents": [
+                {
+                    "document_id": "doc_50",
+                    "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+                    "status": "FOUND",
+                    "records": [
+                        {
+                            "entity_id": "doc_50",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "certificate_holder_name",
+                                    "value": "1",
+                                    "datatype": "string",
+                                    "page": 50,
+                                    "snippet": "CISA/DISA Certified Partner/Qualified CA's",
+                                    "confidence": 0.95,
+                                    "raw_value": "1"
+                                },
+                                {
+                                    "name": "certificate_type",
+                                    "value": "1",
+                                    "datatype": "enum",
+                                    "page": 50,
+                                    "snippet": "CISA/DISA Certified Partner/Qualified CA's",
+                                    "confidence": 0.95,
+                                    "raw_value": "1"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "document_id": "doc_36",
+                    "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+                    "status": "FOUND",
+                    "records": [
+                        {
+                            "entity_id": "doc_36",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "certificate_holder_name",
+                                    "value": "RAHUL",
+                                    "datatype": "string",
+                                    "page": 36,
+                                    "snippet": "1 | RAHUL | FCA | 175161 | 08/08/2018 |",
+                                    "confidence": 0.95,
+                                    "raw_value": "RAHUL"
+                                },
+                                {
+                                    "name": "certificate_type",
+                                    "value": "FCA",
+                                    "datatype": "enum",
+                                    "page": 36,
+                                    "snippet": "1 | RAHUL | FCA | 175161 | 08/08/2018 |",
+                                    "confidence": 0.95,
+                                    "raw_value": "FCA"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "document_id": "doc_58",
+                    "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+                    "status": "PARTIAL",
+                    "records": []
+                }
+            ]
+        },
+        {
+            "requirement_document": "Partnership Agreement",
+            "mode": "EXPLICIT",
+            "entity_type": "Other",
+            "matched_documents": [
+                {
+                    "document_id": "doc_56",
+                    "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+                    "status": "FOUND",
+                    "records": [
+                        {
+                            "entity_id": "doc_56",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "partner_names",
+                                    "value": "The said Neha",
+                                    "datatype": "list[string]",
+                                    "page": 56,
+                                    "snippet": "| 1 | The said Neha | 25 % |",
+                                    "confidence": 0.95,
+                                    "raw_value": "The said Neha"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "The said Rahul",
+                                    "datatype": "list[string]",
+                                    "page": 56,
+                                    "snippet": "| 2 | The said Rahul | 40 % |",
+                                    "confidence": 0.95,
+                                    "raw_value": "The said Rahul"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "The said Gourav",
+                                    "datatype": "list[string]",
+                                    "page": 56,
+                                    "snippet": "| 3 | The said Gourav | 25 % |",
+                                    "confidence": 0.95,
+                                    "raw_value": "The said Gourav"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "The said Rani",
+                                    "datatype": "list[string]",
+                                    "page": 56,
+                                    "snippet": "| 4 | The said Rani | 5% |",
+                                    "confidence": 0.95,
+                                    "raw_value": "The said Rani"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "The said Abha",
+                                    "datatype": "list[string]",
+                                    "page": 56,
+                                    "snippet": "| 5 | The said Abha | 5% |",
+                                    "confidence": 0.95,
+                                    "raw_value": "The said Abha"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "document_id": "doc_58",
+                    "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+                    "status": "FOUND",
+                    "records": [
+                        {
+                            "entity_id": "doc_58",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "partner_names",
+                                    "value": "Neha",
+                                    "datatype": "list[string]",
+                                    "page": 58,
+                                    "snippet": "Signatures (with numbered circles): 1. Neha",
+                                    "confidence": 0.95,
+                                    "raw_value": "Neha"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "Bkheria",
+                                    "datatype": "list[string]",
+                                    "page": 58,
+                                    "snippet": "2. Bkheria 3. gkhiy.",
+                                    "confidence": 0.95,
+                                    "raw_value": "Bkheria"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "gkhiy.",
+                                    "datatype": "list[string]",
+                                    "page": 58,
+                                    "snippet": "3. gkhiy. 4. Rani Bajoria",
+                                    "confidence": 0.95,
+                                    "raw_value": "gkhiy."
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "Rani Bajoria",
+                                    "datatype": "list[string]",
+                                    "page": 58,
+                                    "snippet": "4. Rani Bajoria 5. Abhrajit Goyal",
+                                    "confidence": 0.95,
+                                    "raw_value": "Rani Bajoria"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "Abhrajit Goyal",
+                                    "datatype": "list[string]",
+                                    "page": 58,
+                                    "snippet": "5. Abhrajit Goyal",
+                                    "confidence": 0.95,
+                                    "raw_value": "Abhrajit Goyal"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "document_id": "doc_54",
+                    "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+                    "status": "FOUND",
+                    "records": [
+                        {
+                            "entity_id": "doc_54",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "partner_names",
+                                    "value": "Rahul",
+                                    "datatype": "list[string]",
+                                    "page": 54,
+                                    "snippet": "the said Rahul (who is a Chartered Accountant)",
+                                    "confidence": 0.95,
+                                    "raw_value": "Rahul"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "Gourav",
+                                    "datatype": "list[string]",
+                                    "page": 54,
+                                    "snippet": "the said Gourav (who is a Chartered Accountant)",
+                                    "confidence": 0.95,
+                                    "raw_value": "Gourav"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "Rani",
+                                    "datatype": "list[string]",
+                                    "page": 54,
+                                    "snippet": "the said Rani & the said Abha (who are",
+                                    "confidence": 0.95,
+                                    "raw_value": "Rani"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "Abha",
+                                    "datatype": "list[string]",
+                                    "page": 54,
+                                    "snippet": "the said Rani & the said Abha (who are",
+                                    "confidence": 0.95,
+                                    "raw_value": "Abha"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "document_id": "doc_36",
+                    "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+                    "status": "FOUND",
+                    "records": [
+                        {
+                            "entity_id": "doc_36",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "partnership_date",
+                                    "value": "2018-08-08",
+                                    "datatype": "date",
+                                    "page": 36,
+                                    "snippet": "continuing as a Partnership 08/08/2018",
+                                    "confidence": 0.95,
+                                    "raw_value": "08/08/2018"
+                                },
+                                {
+                                    "name": "partner_names",
+                                    "value": "RAHUL",
+                                    "datatype": "list[string]",
+                                    "page": 36,
+                                    "snippet": "1 | RAHUL | FCA | 175161 | 08/08/2018",
+                                    "confidence": 0.95,
+                                    "raw_value": "RAHUL"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "criterion_id": "CRIT001",
+    "criterion": "The firm should have at least one Partner Qualified CISA/DISA/DISSA Certification. (A copy of CISA/DISA/DISSA certificate and in case of Firm, copy of partnership agreement shall be submitted by the bidder)."
+}

@@ -1,8 +1,8 @@
 """
 LLM Client — lightweight OpenAI wrapper.
 
-Reads OPENROUTER_API_KEY and OPENROUTER_MODEL from .env (or environment).
-Model: Configured via OPENROUTER_MODEL environment variable.
+Reads OPENAI_API_KEY from .env (or environment).
+Model: gpt-4o-mini only.
 Temperature: 0 for deterministic extraction.
 """
 
@@ -14,7 +14,7 @@ import os
 from pathlib import Path
 from typing import Any, Dict, Optional
 
-from Evalution.client import get_openrouter_client, get_llm_model
+from Evalution.client import get_openrouter_client
 
 logger = logging.getLogger(__name__)
 
@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 _client: Optional[Any] = None
-_model: str = ""
+_model: str = "openai/gpt-4o-mini"
 
 
 def _load_env() -> None:
@@ -57,19 +57,15 @@ def _load_env() -> None:
 
 def get_client() -> Any:
     """Return the shared OpenRouter-backed client singleton."""
-    global _client, _model
+    global _client
     if _client is None:
         _load_env()
-        _model = get_llm_model()
         _client = get_openrouter_client(model=_model)
         logger.debug("OpenRouter client initialised (model=%s)", _model)
     return _client
 
 
 def get_model() -> str:
-    global _model
-    if not _model:
-        _model = get_llm_model()
     return _model
 
 

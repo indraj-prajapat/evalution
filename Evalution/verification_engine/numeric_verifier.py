@@ -467,8 +467,25 @@ class NumericVerifier:
             unverified.any_failed = False
             return unverified
 
-        # Compute average using one amount per financial year (pick max
-        # to be conservative when multiple figures exist for same year).
+        # Compute average using one amount per financial year - pick the
+        # MAX when multiple figures exist for the same year.
+        #
+        # BUGFIX: this used to compute the AVERAGE of every amount mapped to
+        # a given year, contradicting its own comment ("pick max to be
+        # conservative"). In practice a single field name (e.g.
+        # "annual_turnover") is frequently reused by the upstream extractor
+        # for unrelated figures that happen to share a keyword and have some
+        # date nearby (audit fees, monthly remuneration, membership
+        # registration numbers, bank sanction limits, etc.). Those noise
+        # values are almost always much smaller than the real balance-sheet
+        # total for the year, so averaging them in with the real figure
+        # silently drags a genuine turnover number down by 50%+ and can
+        # flip a real PASS into a false FAIL. Taking the MAX per year is
+        # the conservative, noise-resistant choice: the true financial-
+        # statement total for a given year is essentially always the
+        # largest figure attributed to that year, so this recovers the
+        # correct value without needing to know which evidence item is
+        # "the real one".
         fy_to_amounts: dict[str, list[float]] = {}
         for fy, amt in year_amount_pairs:
             fy_to_amounts.setdefault(fy, []).append(amt)
@@ -478,8 +495,11 @@ class NumericVerifier:
         for fy in sorted(fy_to_amounts.keys()):
             amounts = fy_to_amounts[fy]
             if len(amounts) > 1:
-                amt = sum(amounts) / len(amounts)
-                per_year_raw.append(f"{fy}: {amt:,.2f} (avg of {len(amounts)} values)")
+                amt = max(amounts)
+                per_year_raw.append(
+                    f"{fy}: {amt:,.2f} (max of {len(amounts)} values: "
+                    f"{', '.join(f'{a:,.2f}' for a in sorted(amounts))})"
+                )
             else:
                 amt = amounts[0]
                 per_year_raw.append(f"{fy}: {amt:,.2f}")

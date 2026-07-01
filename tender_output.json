@@ -1,0 +1,101 @@
+{
+    "metadata": {
+        "tender_title": "APPOINTMENT OF FINANCIAL INTERNAL AUDIT SERVICES - AUDIT REPORT, FINANCIAL REPORTING FRAMEWORK; CA FIRM",
+        "gem_bid_id": null,
+        "tender_reference_number": null,
+        "tender_type": "Financial Internal Audit Services",
+        "tender_category": "Services",
+        "procurement_mode": "TWO COVER SYSTEM",
+        "organisation": "JAWAHARLAL NEHRU PORT AUTHORITY (JNPA)",
+        "department": null,
+        "location": null,
+        "currency": "INR",
+        "dates": {
+            "published": null,
+            "pre_bid_meeting": null,
+            "pre_bid_meeting_location": null,
+            "bid_document_download_end": null,
+            "bid_submission_deadline": null,
+            "bid_opening": null,
+            "technical_bid_opening": null,
+            "financial_bid_opening": null,
+            "bid_validity_days": 90,
+            "contract_duration": "Two years from the date specified in the Work Order and extendable for a period up to One year with the same rate (inflation considered 5%)",
+            "defect_liability_period": null,
+            "mobilisation_period": "15 days from the date of issue of letter of intent or within the extended date as the case may be"
+        },
+        "financial": {
+            "estimated_cost": null,
+            "emd_amount": "Rs. 157,200 /- (incl GST)",
+            "emd_percentage": null,
+            "emd_validity_days": 90,
+            "emd_mode": "DD / NEFT/ RTGS/ Insurance surety Bond/ Bank Guarantee",
+            "performance_security_pct": "5% of the contract award price plus applicable GST",
+            "performance_security_amount": null,
+            "additional_performance_security_pct": "a) Bids Below 10% (of estimate) - No APBG; b) 10% to 30% (of estimate) - APBG 10%; c) 30% to 40% (of estimate) - APBG 15%; d) 40% and Above (of estimate) - Sole discretion of Competent Authority by seeking APBG more than 15% of Award value, if tender is accepted",
+            "retention_money_pct": null,
+            "liquidated_damages_pct": null,
+            "liquidated_damages_cap_pct": null,
+            "mobilisation_advance_pct": null
+        },
+        "qualification": {
+            "financial_years_count": null,
+            "annual_turnover_requirement": null,
+            "annual_turnover_period": null,
+            "net_worth_requirement": null,
+            "similar_work_full_definition": "The documents submitted by the bidder as specified in Form IV will be evaluated based on the Work Order/Work completion certificate of similar Work and value of the work fulfilling the Eligibility criteria.",
+            "similar_work_minimum_value": null,
+            "similar_work_count_required": null,
+            "similar_work_period_years": null,
+            "experience_years": null
+        },
+        "bidder_definitions": {
+            "Class I": null,
+            "Class II": null,
+            "Class III": null,
+            "local_supplier": null,
+            "mse": "exempted only on submission of MSE certificate by a Small and Minor scale Industry"
+        },
+        "registration_requirements": "Copies of attested Original registration certificate/ICAI Firm registration details, Documents incorporating the legal entity and defining its legal status, PAN & GST registration Certificate, Entity Profile and Details of Partners in case of Firm/LLP, Place of registration and principal place of business, etc.",
+        "applicable_laws": "Prevention of Corruption Act, 1988; Indian Penal Code; other laws for the time being in force",
+        "key_clauses": {
+            "IV.2.ii": "The Port may verify the original documents of the copies submitted by the Bidder during evaluation or at any time, if required. In case the documents submitted by the bidders found to be forged/false, the port will take appropriate penal action including cancellation of the work order issued and blacklisting of the entity for a period of 3 years, forfeiture Bank Guarantee either jointly or severally.",
+            "V.1.a": "A bidder shall be debarred if he has been convicted of an offence under the Prevention of Corruption Act, 1988; or the Indian Penal Code or any other law for the time being in force, for causing any loss of life or property or causing a threat to public health as part of execution of a public procurement contract.",
+            "V.1.ii": "The Performance Security should remain valid for a period of 90(Ninety) days beyond the date of completion of all contractual obligations of the Successful Tenderer including statutory obligations and will be refunded/discharged thereafter without any interest after adjusting any dues to the Port.",
+            "V.2.iii": "The successful tenderer shall submit the performance security for an amount of 5% of the contract award price plus applicable GST as Bank Guarantee within twenty-one days of the receipt of the notification of the award of contract from the Employer."
+        },
+        "key_forms": {
+            "Form I": "Details of Firm - to be submitted as part of Part I (Technical Bid) for qualification verification",
+            "Form II": "Bid Security Declaration - to be submitted as part of Part I (Technical Bid)",
+            "Form III": "Bid Security (Bank Guarantee) - to be submitted as part of Part I (Technical Bid)",
+            "Form IV": "Declaration of Authorised Representative of the Bid - to authorise a Partner to represent the bidder; also serves as Contract Agreement template",
+            "Form V": "Tender Acceptance and Declaration on the Bid - to declare compliance with litigation and debarment criteria",
+            "Form VI": "Insurance Surety Bond towards Bid Bond - to be submitted as bid security in lieu of cash",
+            "Form VII": "Insurance Surety Bond towards Performance Security - to be submitted as performance security in lieu of cash"
+        },
+        "other_key_values": {
+            "emd_forfeiture": "Without valid EMD the bid stands disqualified",
+            "performance_security_deposit_period": "21 days from award notification (extendable 6 days in extraordinary circumstances)",
+            "performance_security_refund_period": "90 days beyond contract completion",
+            "contract_extension_terms": "Extendable for a period up to One year with the same rate (inflation considered 5%)",
+            "bid_submission_mode": "Tenders should be submitted online through GeM Portal",
+            "bid_document_transfer_prohibition": "Transfer of bid documents submitted by one intending Bidder to another is not permissible",
+            "canvassing_consequence": "Canvassing in any form by the Bidders will result in their tender being rejected",
+            "outstanding_dues_consequence": "Parties with outstanding dues to the Port as on NIT publication date shall not be allowed to participate",
+            "insurance_surety_bond_requirements": "To be on non-judicial stamp paper/e-stamp paper of appropriate value as per Stamp Act; payable at Mumbai/Navi Mumbai"
+        }
+    },
+    "summary": {
+        "summary": "The Jawaharlal Nehru Port Authority (JNPA) in Navi Mumbai, Maharashtra, is inviting bids for the appointment of a Chartered Accountancy firm to provide Financial Internal Audit Services, including the preparation of audit reports and financial reporting, under a two-year contract (2025–2027) with an optional one-year extension based on performance and agreed terms. Bidders must demonstrate experience in similar work with organizations having a turnover exceeding Rs. 980 crores over the past seven years and submit a bid security of Rs. 157,200 (inclusive of GST), unless exempted for MSE-certified small-scale industries. The tender, conducted via the GeM Portal, requires online submission of both technical and price bids, with strict rules against incomplete details, post-opening amendments, or canvassing, and all payments will be made in Indian Rupees. The contract terms emphasize adherence to statutory compliance, and JNPA reserves the right to reject any or all bids without explanation."
+    },
+    "key_points": [
+       {
+            "key_id": "CRIT_027",
+            "sub_category": "TURNOVER",
+            "point": "The entity must demonstrate an average annual turnover of at least Rs.20 Lakh per annum for the past 3 financial years, supported by three years of audited financial statements.",
+            "is_mqc": true,
+            "financial_tag": true,
+            "human_review": true
+        }
+    ]
+}

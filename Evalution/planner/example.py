@@ -23,7 +23,6 @@ import sys
 # Ensure the package root is importable when running directly
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from Evalution.client import get_llm_model
 from Evalution.planner.config import LLMConfig, PlannerConfig, RetryConfig
 from Evalution.planner.logging_utils import configure_logging, get_logger
 from Evalution.planner.planner import TenderPlanner
@@ -75,7 +74,7 @@ def main() -> None:
         llm=LLMConfig(
             api_key=os.environ.get("OPENAI_API_KEY", ""),
             base_url=os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1"),
-            model=get_llm_model(),
+            model=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"),
             temperature=0.2,
             max_tokens=4096,
             timeout=120,

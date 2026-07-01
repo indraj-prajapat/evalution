@@ -1,0 +1,48 @@
+{
+  "criterion_id": "CRIT001",
+  "criterion": "Technical eligibility check",
+  "required_documents": [
+    {
+      "document": "Certificate of Incorporation",
+      "mode": "EXPLICIT",
+      "category": "Registration Documents",
+      "priority": 1,
+      "required": true,
+      "fields": [
+        {"name": "company_name", "datatype": "string", "required": true, "description": "Registered company name"},
+        {"name": "pan", "datatype": "string", "required": true, "description": "PAN number"},
+        {"name": "cin", "datatype": "string", "required": true, "description": "CIN number"},
+        {"name": "date_of_incorporation", "datatype": "date", "required": true, "description": "Date of incorporation"}
+      ]
+    },
+    {
+      "document": "Financial Documents",
+      "mode": "CATEGORY",
+      "category": "Financial Documents",
+      "priority": 2,
+      "required": true,
+      "expected_documents": ["CA Certificate", "Balance Sheet", "Audited Financial Statement"],
+      "fields": [
+        {"name": "financial_year", "datatype": "string", "required": true, "description": "Financial year", "examples": ["2023-24", "FY 2023-24"]},
+        {"name": "annual_turnover", "datatype": "currency", "required": true, "description": "Annual turnover in INR", "examples": ["Rs. 4,56,78,900"]},
+        {"name": "net_profit", "datatype": "currency", "required": true, "description": "Net profit after tax"}
+      ],
+      "group_by": "financial_year"
+    },
+    {
+      "document": "Work Order",
+      "mode": "EXPLICIT",
+      "category": "Experience Documents",
+      "priority": 3,
+      "required": true,
+      "fields": [
+        {"name": "project_name", "datatype": "string", "required": true},
+        {"name": "client_name", "datatype": "string", "required": true},
+        {"name": "contract_value", "datatype": "currency", "required": true},
+        {"name": "completion_date", "datatype": "date", "required": true},
+        {"name": "work_order_number", "datatype": "string", "required": true}
+      ],
+      "group_by": "project"
+    }
+  ]
+}

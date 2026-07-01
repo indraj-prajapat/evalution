@@ -1,0 +1,53 @@
+[
+    {
+        "criterion_id": "CRIT_027",
+        "plan": {
+            "criterion_id": "CRIT_027",
+            "criterion": "The entity must demonstrate an average annual turnover of at least Rs.20 Lakh per annum for the past 3 financial years, supported by three years of audited financial statements.",
+            "required_documents": [
+                {
+                    "mode": "EXPLICIT",
+                    "document": "Audited Financial Statements",
+                    "category": "Financial Documents",
+                    "expected_documents": [
+                        "Audited Financial Statements"
+                    ],
+                    "priority": 1,
+                    "required": true,
+                    "fields": [
+                        {
+                            "name": "annual_turnover",
+                            "datatype": "currency",
+                            "description": "Annual turnover for each financial year as stated in audited financial statements",
+                            "repeatable": true,
+                            "group_by": "financial_year",
+                            "required": true,
+                            "examples": [
+                                "2000000",
+                                "2500000",
+                                "1800000"
+                            ]
+                        },
+                        {
+                            "name": "financial_year",
+                            "datatype": "string",
+                            "description": "Financial year corresponding to the annual turnover (e.g., FY2021, FY2022)",
+                            "repeatable": true,
+                            "group_by": "financial_year",
+                            "required": true,
+                            "examples": [
+                                "FY2021",
+                                "FY2022",
+                                "FY2023"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "raw_response": "{\n  \"criterion_id\": \"CRIT_027\",\n  \"criterion\": \"The entity must demonstrate an average annual turnover of at least Rs.20 Lakh per annum for the past 3 financial years, supported by three years of audited financial statements.\",\n  \"required_documents\": [\n    {\n      \"mode\": \"EXPLICIT\",\n      \"document\": \"Audited Financial Statements\",\n      \"category\": \"Financial Documents\",\n      \"expected_documents\": [\"Audited Financial Statements\"],\n      \"priority\": 1,\n      \"required\": true,\n      \"fields\": [\n        {\n          \"name\": \"annual_turnover\",\n          \"datatype\": \"currency\",\n          \"description\": \"Annual turnover for each financial year as stated in audited financial statements\",\n          \"repeatable\": true,\n          \"group_by\": \"financial_year\",\n          \"required\": true,\n          \"examples\": [\"2000000\", \"2500000\", \"1800000\"]\n        },\n        {\n          \"name\": \"financial_year\",\n          \"datatype\": \"string\",\n          \"description\": \"Financial year corresponding to the annual turnover (e.g., FY2021, FY2022)\",\n          \"repeatable\": true,\n          \"group_by\": \"financial_year\",\n          \"required\": true,\n          \"examples\": [\"FY2021\", \"FY2022\", \"FY2023\"]\n        }\n      ]\n    }\n  ]\n}",
+        "attempts": 1,
+        "success": true,
+        "error": ""
+    }
+]

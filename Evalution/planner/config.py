@@ -15,7 +15,7 @@ class LLMConfig:
     Attributes:
         api_key: API key for the LLM provider. Can be empty string for local models.
         base_url: Base URL of the OpenAI-compatible API endpoint.
-        model: Model identifier string (e.g. "gpt-4o", "grok-3"). Defaults to OPENROUTER_MODEL env var.
+        model: Model identifier string (e.g. "gpt-4o", "grok-3").
         temperature: Sampling temperature. Low values produce more deterministic output.
         max_tokens: Maximum tokens in the LLM response.
         timeout: Request timeout in seconds.
@@ -23,7 +23,7 @@ class LLMConfig:
 
     api_key: str = ""
     base_url: str = DEFAULT_OPENROUTER_BASE_URL
-    model: str = ""
+    model: str = "openai/gpt-4o-mini"
     temperature: float = 0.1
     max_tokens: int = 4096
     timeout: int = 120

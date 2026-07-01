@@ -66,16 +66,12 @@ def get_llm_api_key() -> str:
 def get_llm_model() -> str:
     """Return the configured model identifier for the OpenRouter provider."""
     _load_env()
-    model = (
+    return (
         os.getenv("OPENROUTER_MODEL", "").strip()
         or os.getenv("OPENAI_MODEL", "").strip()
         or os.getenv("MODEL", "").strip()
+        or "openai/gpt-4o-mini"
     )
-    if not model:
-        raise ValueError(
-            "No model configured. Please set OPENROUTER_MODEL in your .env file."
-        )
-    return model
 
 
 class OpenRouterClient:

@@ -1,0 +1,64 @@
+{
+  "bid_documents.pdf": {
+    "file_name": "bid_documents.pdf",
+    "documents": {
+      "documents": [
+        {
+          "doc_id": "doc_1",
+          "doc_type": "certificate",
+          "pages": [1],
+          "document_name": "Certificate of Incorporation",
+          "category": "Registration",
+          "entities": {
+            "company_name": "ABC Pvt. Ltd.",
+            "pan": "ABCDE1234F",
+            "cin": "L12345MH2020PTC123456"
+          },
+          "summary": "Certificate of Incorporation for M/s ABC Pvt. Ltd. with PAN, CIN, and date of incorporation."
+        },
+        {
+          "doc_id": "doc_5",
+          "doc_type": "balance_sheet",
+          "pages": [15, 16],
+          "document_name": "Balance Sheet FY2023-24",
+          "category": "Financial Documents",
+          "entities": {
+            "company_name": "ABC Pvt. Ltd.",
+            "financial_year": "2023-24"
+          },
+          "summary": "Audited balance sheet and financial statements for FY 2023-24 showing turnover and profit."
+        },
+        {
+          "doc_id": "doc_8",
+          "doc_type": "work_order",
+          "pages": [25],
+          "document_name": "Work Order - Highway Construction",
+          "category": "Experience",
+          "entities": {
+            "client_name": "NHAI"
+          },
+          "summary": "Work order for highway construction project from NHAI with contract value and dates."
+        },
+        {
+          "doc_id": "doc_10",
+          "doc_type": "gst_certificate",
+          "pages": [30],
+          "document_name": "GST Registration Certificate",
+          "category": "Tax",
+          "entities": {
+            "gstin": "27ABCDE1234F1Z5",
+            "company_name": "ABC Pvt. Ltd."
+          },
+          "summary": "GST registration certificate showing GSTIN and tax details."
+        }
+      ]
+    },
+    "pages": {
+      "page_1": "CERTIFICATE OF INCORPORATION\n\nName of the Company: M/s ABC Pvt. Ltd.\n\nCIN: L12345MH2020PTC123456\nPAN: ABCDE1234F\n\nDate of Incorporation: 15 March 2020\n\nRegistered Office: 123, Industrial Area, Phase-II, Chandigarh 160002\n\nConstitution: Private Limited Company\n\nThis is to certify that M/s ABC Pvt. Ltd. is incorporated under the Companies Act, 2013.\n",
+      "page_15": "AUDITED BALANCE SHEET\n\nM/s ABC Pvt. Ltd.\n\nFinancial Year: FY 2023-24\n\nAnnual Turnover during FY2023-24 was Rs.4,56,78,900.\n\nNet Profit after tax: Rs. 45,67,890\n\nNet Worth: Rs. 12,34,56,789\n\nTotal Assets: Rs. 18,45,67,890\n\nThe company has maintained good financial health during the period under review.",
+      "page_16": "BALANCE SHEET CONTINUATION\n\nFinancial Year: FY 2022-23\n\nAnnual Turnover during FY2022-23 was Rs.3,45,67,800.\n\nNet Profit after tax: Rs. 34,56,780\n\nReserves and Surplus: Rs. 5,67,89,012\n\nBorrowings: Rs. 2,34,56,789",
+      "page_25": "WORK ORDER\n\nWork Order No: NHAI/WO/2023/4567\n\nProject Name: Four-Laning of National Highway from Km 120 to Km 180\n\nClient: National Highways Authority of India (NHAI)\n\nNature of Work: Four-laning of NH including earthwork, paving, bridges, and drainage.\n\nContract Value: Rs. 2,45,67,89,000\n\nStart Date: 01 April 2023\n\nCompletion Date: 31 March 2025\n\nLocation: State of Maharashtra\n\nDuration: 24 months\n",
+      "page_30": "GST REGISTRATION CERTIFICATE\n\nGSTIN: 27ABCDE1234F1Z5\n\nTaxpayer Name: M/s ABC Pvt. Ltd.\n\nType of Registration: Regular\n\nDate of Registration: 01 July 2017\n\nState: Maharashtra\n\nState Code: 27\n\nConstitution of Business: Private Limited Company\n\nThis certificate is valid as per the GST Act, 2017."
+    }
+  }
+}

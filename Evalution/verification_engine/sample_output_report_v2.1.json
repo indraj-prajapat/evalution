@@ -1,0 +1,750 @@
+{
+  "criterion_id": "CRIT001",
+  "criterion": "The firm should have at least one Partner Qualified CISA/DISA/DISSA Certification. (A copy of CISA/DISA/DISSA certificate and in case of Firm, copy of partnership agreement shall be submitted by the bidder).",
+  "company_name": "Sample Firm",
+  "verdict": "REVIEW",
+  "python_verdict": "REVIEW",
+  "summary": "LLM evaluation failed: No module named 'openai'. Falling back to Python verdict: REVIEW.",
+  "reason": [
+    "Missing information (3 item(s)): Document 'Partnership Agreement – KHERIA & COMPANY – Neha et al.' was matched but has no extractable records (PARTIAL status).; The extracted certificate_type value '1' in 'Form I – Kheria and Company – 14 Jan 2026' appears to be a numeric count rather than an actual certificate type. The actual CISA/DISA/DISSA certificate could not be verified.; No actual CISA/DISA/DISSA certificate was found. The firm claims to have a CISA/DISA certified person (Form I mentions 1), but the certificate document itself was not verified.",
+    "2 fact(s) could not be verified by Python.",
+    "1 required item(s) not found.",
+    "RELEVANT contradiction(s) found (6): Keyword 'Partner' found on page 51 which was not referenced by Module 2 matched documents; Keyword 'partner' found on page 51 which was not referenced by Module 2 matched documents",
+    "Ground truth: missing evidence for ['agreement'].",
+    "Some checks returned FALSE but missing information prevents conclusive determination.",
+    "---",
+    "Python preliminary verdict: REVIEW"
+  ],
+  "verified_facts": [
+    {
+      "id": "FACT001",
+      "statement": "Python found 3 document(s) matched against requirement 'CISA/DISA/DISSA Certificate': 2 FOUND, 1 PARTIAL, 0 NOT FOUND.",
+      "type": "COUNT",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Form I – Kheria and Company – 14 Jan 2026",
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al."
+      ],
+      "details": {
+        "total_matched": 3,
+        "found_count": 2,
+        "partial_count": 1,
+        "not_found_count": 0
+      }
+    },
+    {
+      "id": "FACT002",
+      "statement": "Python verified that 0 extracted field(s) match the required certificate type(s): CISA, DISA, DISSA.",
+      "type": "ENTITY_MATCH",
+      "status": "NOT_FOUND",
+      "computed_by": "python",
+      "source_fields": [
+        "certificate_type"
+      ],
+      "source_documents": [],
+      "details": {
+        "target_cert_types": [
+          "cisa",
+          "disa",
+          "dissa"
+        ],
+        "match_count": 0,
+        "matched_documents": [],
+        "pages": []
+      }
+    },
+    {
+      "id": "FACT003",
+      "statement": "Python verified that the number of matching certificates (0) is less than the required minimum (1).",
+      "type": "THRESHOLD",
+      "status": "FALSE",
+      "computed_by": "python",
+      "source_fields": [
+        "certificate_type"
+      ],
+      "source_documents": [],
+      "details": {
+        "found_count": 0,
+        "required_minimum": 1,
+        "threshold_met": false
+      }
+    },
+    {
+      "id": "FACT004",
+      "statement": "Python extracted 2 certificate holder name(s): 1, RAHUL. Of these, 1 appear to be actual name(s): RAHUL. 1 appear to be placeholder/numeric value(s): 1.",
+      "type": "ENTITY_MATCH",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [
+        "certificate_holder_name"
+      ],
+      "source_documents": [],
+      "details": {
+        "all_holder_names": [
+          "1",
+          "RAHUL"
+        ],
+        "real_names": [
+          "RAHUL"
+        ],
+        "placeholder_names": [
+          "1"
+        ],
+        "real_name_count": 1
+      }
+    },
+    {
+      "id": "FACT005",
+      "statement": "WARNING: All extracted values from document 'Form I – Kheria and Company – 14 Jan 2026' (record doc_50) are numeric/placeholder values: 1, 1. This suggests the extraction captured a count/table cell rather than an actual certificate. No verifiable certificate data was found.",
+      "type": "MISSING_INFO",
+      "status": "UNVERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Form I – Kheria and Company – 14 Jan 2026"
+      ],
+      "details": {
+        "document_id": "doc_50",
+        "entity_id": "doc_50",
+        "all_values": [
+          "1",
+          "1"
+        ],
+        "all_numeric": true
+      }
+    },
+    {
+      "id": "FACT006",
+      "statement": "Python found 1 document(s) with PARTIAL status (no extractable records): Partnership Agreement – KHERIA & COMPANY – Neha et al.. Certificate content could not be verified from these documents.",
+      "type": "MISSING_INFO",
+      "status": "UNVERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al."
+      ],
+      "details": {
+        "partial_documents": [
+          "Partnership Agreement – KHERIA & COMPANY – Neha et al."
+        ]
+      }
+    },
+    {
+      "id": "FACT007",
+      "statement": "Python found 1 page(s) in Company JSON containing CISA/DISA/DISSA-related keywords: page 50 (CISA), page 50 (DISA), page 50 (certified).",
+      "type": "EXISTENCE",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Company JSON page 50"
+      ],
+      "details": {
+        "page_results": [
+          {
+            "page": 50,
+            "keywords": [
+              "CISA",
+              "DISA",
+              "certified"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "FACT008",
+      "statement": "Python counted 2 unique entity/record(s) extracted for requirement 'CISA/DISA/DISSA Certificate' across 3 matched document(s).",
+      "type": "COUNT",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Form I – Kheria and Company – 14 Jan 2026",
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al."
+      ],
+      "details": {
+        "entity_ids": [
+          "doc_36",
+          "doc_50"
+        ],
+        "count": 2
+      }
+    },
+    {
+      "id": "FACT009",
+      "statement": "Python found 4 document(s) matched against partnership requirement: 4 with FOUND status, 0 with other statuses.",
+      "type": "COUNT",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+        "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018"
+      ],
+      "details": {
+        "total": 4,
+        "found": 4
+      }
+    },
+    {
+      "id": "FACT010",
+      "statement": "Python extracted 15 total partner name(s) across 4 document(s). After deduplication, 10 unique partner(s) identified: Abha, Abhrajit Goyal, Bkheria, Gourav, Neha, RAHUL, Rahul, Rani, Rani Bajoria, gkhiy.",
+      "type": "COUNT",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [
+        "partner_names"
+      ],
+      "source_documents": [
+        "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+        "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018"
+      ],
+      "details": {
+        "total_extracted": 15,
+        "unique_count": 10,
+        "unique_names": [
+          "Abha",
+          "Abhrajit Goyal",
+          "Bkheria",
+          "Gourav",
+          "Neha",
+          "RAHUL",
+          "Rahul",
+          "Rani",
+          "Rani Bajoria",
+          "gkhiy"
+        ],
+        "per_document": {
+          "Partnership Agreement – KHERIA & COMPANY – FY 2023-24": [
+            "Neha",
+            "Rahul",
+            "Gourav",
+            "Rani",
+            "Abha"
+          ],
+          "Partnership Agreement – KHERIA & COMPANY – Neha et al.": [
+            "Neha",
+            "Bkheria",
+            "gkhiy",
+            "Rani Bajoria",
+            "Abhrajit Goyal"
+          ],
+          "Partnership Agreement – Kheria & Company – 08 Aug 2018": [
+            "Rahul",
+            "Gourav",
+            "Rani",
+            "Abha"
+          ],
+          "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018": [
+            "RAHUL"
+          ]
+        }
+      }
+    },
+    {
+      "id": "FACT011",
+      "statement": "Python detected inconsistency: partners Neha, Rahul, Gourav, Rani, Abha, Bkheria, gkhiy, Rani Bajoria, Abhrajit Goyal, RAHUL appear in some documents but not all. Document-by-document breakdown: Partnership Agreement – KHERIA & COMPANY – FY 2023-24: Neha, Rahul, Gourav, Rani, Abha; Partnership Agreement – KHERIA & COMPANY – Neha et al.: Neha, Bkheria, gkhiy, Rani Bajoria, Abhrajit Goyal; Partnership Agreement – Kheria & Company – 08 Aug 2018: Rahul, Gourav, Rani, Abha; Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018: RAHUL",
+      "type": "ENTITY_MATCH",
+      "status": "CONFLICTING",
+      "computed_by": "python",
+      "source_fields": [
+        "partner_names"
+      ],
+      "source_documents": [
+        "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+        "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018"
+      ],
+      "details": {
+        "consistent": false,
+        "inconsistent_names": [
+          "Neha",
+          "Rahul",
+          "Gourav",
+          "Rani",
+          "Abha",
+          "Bkheria",
+          "gkhiy",
+          "Rani Bajoria",
+          "Abhrajit Goyal",
+          "RAHUL"
+        ],
+        "per_document": {
+          "Partnership Agreement – KHERIA & COMPANY – FY 2023-24": [
+            "Neha",
+            "Rahul",
+            "Gourav",
+            "Rani",
+            "Abha"
+          ],
+          "Partnership Agreement – KHERIA & COMPANY – Neha et al.": [
+            "Neha",
+            "Bkheria",
+            "gkhiy",
+            "Rani Bajoria",
+            "Abhrajit Goyal"
+          ],
+          "Partnership Agreement – Kheria & Company – 08 Aug 2018": [
+            "Rahul",
+            "Gourav",
+            "Rani",
+            "Abha"
+          ],
+          "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018": [
+            "RAHUL"
+          ]
+        },
+        "name_occurrence": {
+          "Neha": 2,
+          "Rahul": 2,
+          "Gourav": 2,
+          "Rani": 2,
+          "Abha": 2,
+          "Bkheria": 1,
+          "gkhiy": 1,
+          "Rani Bajoria": 1,
+          "Abhrajit Goyal": 1,
+          "RAHUL": 1
+        }
+      }
+    },
+    {
+      "id": "FACT012",
+      "statement": "Python extracted partnership date '2018-08-08' from document 'Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018' (page 36).",
+      "type": "DATE",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [
+        "partnership_date"
+      ],
+      "source_documents": [
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018"
+      ],
+      "details": {
+        "date": "2018-08-08",
+        "page": 36
+      }
+    },
+    {
+      "id": "FACT013",
+      "statement": "Python counted 4 unique entity/record(s) extracted for requirement 'Partnership Agreement' across 4 matched document(s).",
+      "type": "COUNT",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [
+        "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+        "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+        "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+        "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018"
+      ],
+      "details": {
+        "entity_ids": [
+          "doc_36",
+          "doc_54",
+          "doc_56",
+          "doc_58"
+        ],
+        "count": 4
+      }
+    },
+    {
+      "id": "FACT014",
+      "statement": "Python verified that no duplicate partner_names values exist across 4 matched document(s).",
+      "type": "DUPLICATE",
+      "status": "VERIFIED",
+      "computed_by": "python",
+      "source_fields": [],
+      "source_documents": [],
+      "details": {}
+    }
+  ],
+  "ground_truth_verification": {
+    "completed": true,
+    "additional_documents_checked": [
+      "Page 50 (6 keyword matches)",
+      "Page 51 (4 keyword matches)",
+      "Page 53 (4 keyword matches)",
+      "Page 54 (4 keyword matches)",
+      "Certificate of Admission as Partner – M/s. KHERIA & COMPANY – 08 Aug 2018",
+      "Form I – Kheria and Company – 14 Jan 2026",
+      "Annexure-A – Details of Full Time Partners"
+    ],
+    "contradictions_found": true,
+    "contradiction_details": [
+      "Keyword 'firm' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'Partner' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'Firm' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'partner' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'firm' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'Partner' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'Firm' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'partner' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'firm' found on page 54 which was not referenced by Module 2 matched documents",
+      "Keyword 'Partner' found on page 54 which was not referenced by Module 2 matched documents",
+      "Keyword 'Firm' found on page 54 which was not referenced by Module 2 matched documents",
+      "Keyword 'partner' found on page 54 which was not referenced by Module 2 matched documents"
+    ],
+    "relevant_contradictions_found": true,
+    "relevant_contradiction_details": [
+      "Keyword 'Partner' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'partner' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'Partner' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'partner' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'Partner' found on page 54 which was not referenced by Module 2 matched documents",
+      "Keyword 'partner' found on page 54 which was not referenced by Module 2 matched documents"
+    ],
+    "irrelevant_contradictions_found": true,
+    "irrelevant_contradiction_details": [
+      "Keyword 'firm' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'Firm' found on page 51 which was not referenced by Module 2 matched documents",
+      "Keyword 'firm' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'Firm' found on page 53 which was not referenced by Module 2 matched documents",
+      "Keyword 'firm' found on page 54 which was not referenced by Module 2 matched documents",
+      "Keyword 'Firm' found on page 54 which was not referenced by Module 2 matched documents"
+    ],
+    "supporting_evidence_found": true,
+    "missing_evidence": [
+      "agreement"
+    ],
+    "linked_entities": [
+      "CISA on page 50 (Form I – Kheria and Company – 14 Jan 2026)",
+      "DISA on page 50 (Form I – Kheria and Company – 14 Jan 2026)",
+      "Partner on page 50 (Form I – Kheria and Company – 14 Jan 2026)",
+      "firm on page 51 (Annexure-A – Details of Full Time Partners)",
+      "Partner on page 51 (Annexure-A – Details of Full Time Partners)",
+      "Partner on page 53 ()",
+      "firm on page 54 ()",
+      "Partner on page 54 ()"
+    ]
+  },
+  "evidence": [
+    {
+      "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+      "page": 50,
+      "text": "CISA/DISA Certified Partner/Qualified CA's",
+      "llm_finding": "certificate_holder_name = 1 (confidence: 0.95)"
+    },
+    {
+      "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+      "page": 50,
+      "text": "CISA/DISA Certified Partner/Qualified CA's",
+      "llm_finding": "certificate_type = 1 (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+      "page": 36,
+      "text": "1 | RAHUL | FCA | 175161 | 08/08/2018 |",
+      "llm_finding": "certificate_holder_name = RAHUL (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+      "page": 36,
+      "text": "1 | RAHUL | FCA | 175161 | 08/08/2018 |",
+      "llm_finding": "certificate_type = FCA (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 1 | The said Neha | 25 % |",
+      "llm_finding": "partner_names = The said Neha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 2 | The said Rahul | 40 % |",
+      "llm_finding": "partner_names = The said Rahul (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 3 | The said Gourav | 25 % |",
+      "llm_finding": "partner_names = The said Gourav (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 4 | The said Rani | 5% |",
+      "llm_finding": "partner_names = The said Rani (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 5 | The said Abha | 5% |",
+      "llm_finding": "partner_names = The said Abha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "Signatures (with numbered circles): 1. Neha",
+      "llm_finding": "partner_names = Neha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "2. Bkheria 3. gkhiy.",
+      "llm_finding": "partner_names = Bkheria (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "3. gkhiy. 4. Rani Bajoria",
+      "llm_finding": "partner_names = gkhiy. (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "4. Rani Bajoria 5. Abhrajit Goyal",
+      "llm_finding": "partner_names = Rani Bajoria (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "5. Abhrajit Goyal",
+      "llm_finding": "partner_names = Abhrajit Goyal (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Rahul (who is a Chartered Accountant)",
+      "llm_finding": "partner_names = Rahul (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Gourav (who is a Chartered Accountant)",
+      "llm_finding": "partner_names = Gourav (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Rani & the said Abha (who are",
+      "llm_finding": "partner_names = Rani (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Rani & the said Abha (who are",
+      "llm_finding": "partner_names = Abha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+      "page": 36,
+      "text": "continuing as a Partnership 08/08/2018",
+      "llm_finding": "partnership_date = 2018-08-08 (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+      "page": 36,
+      "text": "1 | RAHUL | FCA | 175161 | 08/08/2018",
+      "llm_finding": "partner_names = RAHUL (confidence: 0.95)"
+    }
+  ],
+  "verdict_evidence": [
+    {
+      "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+      "page": 50,
+      "text": "CISA/DISA Certified Partner/Qualified CA's",
+      "llm_finding": "certificate_holder_name = 1 (confidence: 0.95)"
+    },
+    {
+      "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+      "page": 50,
+      "text": "CISA/DISA Certified Partner/Qualified CA's",
+      "llm_finding": "certificate_type = 1 (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 1 | The said Neha | 25 % |",
+      "llm_finding": "partner_names = The said Neha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 2 | The said Rahul | 40 % |",
+      "llm_finding": "partner_names = The said Rahul (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 3 | The said Gourav | 25 % |",
+      "llm_finding": "partner_names = The said Gourav (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 4 | The said Rani | 5% |",
+      "llm_finding": "partner_names = The said Rani (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+      "page": 56,
+      "text": "| 5 | The said Abha | 5% |",
+      "llm_finding": "partner_names = The said Abha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "Signatures (with numbered circles): 1. Neha",
+      "llm_finding": "partner_names = Neha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "2. Bkheria 3. gkhiy.",
+      "llm_finding": "partner_names = Bkheria (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "3. gkhiy. 4. Rani Bajoria",
+      "llm_finding": "partner_names = gkhiy. (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "4. Rani Bajoria 5. Abhrajit Goyal",
+      "llm_finding": "partner_names = Rani Bajoria (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+      "page": 58,
+      "text": "5. Abhrajit Goyal",
+      "llm_finding": "partner_names = Abhrajit Goyal (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Rahul (who is a Chartered Accountant)",
+      "llm_finding": "partner_names = Rahul (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Gourav (who is a Chartered Accountant)",
+      "llm_finding": "partner_names = Gourav (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Rani & the said Abha (who are",
+      "llm_finding": "partner_names = Rani (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+      "page": 54,
+      "text": "the said Rani & the said Abha (who are",
+      "llm_finding": "partner_names = Abha (confidence: 0.95)"
+    },
+    {
+      "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+      "page": 36,
+      "text": "1 | RAHUL | FCA | 175161 | 08/08/2018",
+      "llm_finding": "partner_names = RAHUL (confidence: 0.95)"
+    }
+  ],
+  "missing_information": [
+    "Document 'Partnership Agreement – KHERIA & COMPANY – Neha et al.' was matched but has no extractable records (PARTIAL status).",
+    "The extracted certificate_type value '1' in 'Form I – Kheria and Company – 14 Jan 2026' appears to be a numeric count rather than an actual certificate type. The actual CISA/DISA/DISSA certificate could not be verified.",
+    "No actual CISA/DISA/DISSA certificate was found. The firm claims to have a CISA/DISA certified person (Form I mentions 1), but the certificate document itself was not verified."
+  ],
+  "criterion_requirements": [
+    {
+      "requirement": "The firm should have at least one Partner Qualified CISA/DISA/DISSA Certif.",
+      "domain": "certificate",
+      "keywords": [
+        "certificate",
+        "certified",
+        "dissa",
+        "disa",
+        "partner",
+        "cisa",
+        "partnership"
+      ]
+    },
+    {
+      "requirement": "A copy of CISA/DISA/DISSA certificate shall be submitted.",
+      "domain": "certificate",
+      "keywords": [
+        "cisa",
+        "disa",
+        "dissa",
+        "certificate"
+      ]
+    },
+    {
+      "requirement": "A copy of partnership agreement shall be submitted.",
+      "domain": "partnership",
+      "keywords": [
+        "partnership",
+        "agreement"
+      ]
+    },
+    {
+      "requirement": "at least one Partner Qualified CISA/DISA/DISSA Certification. (A copy of CISA/DISA/DISSA certificate",
+      "domain": "certificate",
+      "keywords": [
+        "least",
+        "one",
+        "partner",
+        "qualified",
+        "cisa",
+        "disa",
+        "dissa",
+        "certification",
+        "copy",
+        "cisa",
+        "disa",
+        "dissa",
+        "certificate"
+      ]
+    },
+    {
+      "requirement": "in case of Firm, copy of partnership agreement shall be submitted by the bidder)",
+      "domain": "partnership",
+      "keywords": [
+        "case",
+        "firm",
+        "copy",
+        "partnership",
+        "agreement",
+        "shall",
+        "submitted",
+        "the",
+        "bidder"
+      ]
+    }
+  ],
+  "informational_notes": [
+    "NOTE: 6 contradiction(s) found in evidence domains outside the criterion's scope. These do NOT affect the verdict: Keyword 'firm' found on page 51 which was not referenced by Module 2 matched documents; Keyword 'Firm' found on page 51 which was not referenced by Module 2 matched documents; Keyword 'firm' found on page 53 which was not referenced by Module 2 matched documents ... and 3 more"
+  ],
+  "llm_evaluation": {
+    "verdict": "REVIEW",
+    "confidence": 0.0,
+    "reasoning": "LLM evaluation failed: No module named 'openai'. Falling back to Python verdict: REVIEW.",
+    "key_findings": [
+      "Python preliminary verdict: REVIEW"
+    ],
+    "risks": [
+      "LLM was unavailable - verdict based on Python analysis only"
+    ],
+    "recommendations": [
+      "Human review recommended due to LLM unavailability",
+      "Set OPENAI_API_KEY in .env file to enable LLM evaluation"
+    ],
+    "python_verdict_agreement": "N/A (LLM unavailable)",
+    "model_used": "gpt-4o-mini",
+    "raw_response": ""
+  }
+}

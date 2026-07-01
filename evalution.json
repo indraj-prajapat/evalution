@@ -1,0 +1,1561 @@
+{
+    "metadata": {
+        "tender_title": "APPOINTMENT OF FINANCIAL INTERNAL AUDIT SERVICES - AUDIT REPORT, FINANCIAL REPORTING FRAMEWORK; CA FIRM",
+        "gem_bid_id": null,
+        "tender_reference_number": null,
+        "tender_type": "Financial Internal Audit Services",
+        "tender_category": "Services",
+        "procurement_mode": "TWO COVER SYSTEM",
+        "organisation": "JAWAHARLAL NEHRU PORT AUTHORITY (JNPA)",
+        "department": null,
+        "location": null,
+        "currency": "INR",
+        "dates": {
+            "published": null,
+            "pre_bid_meeting": null,
+            "pre_bid_meeting_location": null,
+            "bid_document_download_end": null,
+            "bid_submission_deadline": null,
+            "bid_opening": null,
+            "technical_bid_opening": null,
+            "financial_bid_opening": null,
+            "bid_validity_days": 90,
+            "contract_duration": "Two years from the date specified in the Work Order and extendable for a period up to One year with the same rate (inflation considered 5%)",
+            "defect_liability_period": null,
+            "mobilisation_period": "15 days from the date of issue of letter of intent or within the extended date as the case may be"
+        },
+        "financial": {
+            "estimated_cost": null,
+            "emd_amount": "Rs. 157,200 /- (incl GST)",
+            "emd_percentage": null,
+            "emd_validity_days": 90,
+            "emd_mode": "DD / NEFT/ RTGS/ Insurance surety Bond/ Bank Guarantee",
+            "performance_security_pct": "5% of the contract award price plus applicable GST",
+            "performance_security_amount": null,
+            "additional_performance_security_pct": "a) Bids Below 10% (of estimate) - No APBG; b) 10% to 30% (of estimate) - APBG 10%; c) 30% to 40% (of estimate) - APBG 15%; d) 40% and Above (of estimate) - Sole discretion of Competent Authority by seeking APBG more than 15% of Award value, if tender is accepted",
+            "retention_money_pct": null,
+            "liquidated_damages_pct": null,
+            "liquidated_damages_cap_pct": null,
+            "mobilisation_advance_pct": null
+        },
+        "qualification": {
+            "financial_years_count": null,
+            "annual_turnover_requirement": null,
+            "annual_turnover_period": null,
+            "net_worth_requirement": null,
+            "similar_work_full_definition": "The documents submitted by the bidder as specified in Form IV will be evaluated based on the Work Order/Work completion certificate of similar Work and value of the work fulfilling the Eligibility criteria.",
+            "similar_work_minimum_value": null,
+            "similar_work_count_required": null,
+            "similar_work_period_years": null,
+            "experience_years": null
+        },
+        "bidder_definitions": {
+            "Class I": null,
+            "Class II": null,
+            "Class III": null,
+            "local_supplier": null,
+            "mse": "exempted only on submission of MSE certificate by a Small and Minor scale Industry"
+        },
+        "registration_requirements": "Copies of attested Original registration certificate/ICAI Firm registration details, Documents incorporating the legal entity and defining its legal status, PAN & GST registration Certificate, Entity Profile and Details of Partners in case of Firm/LLP, Place of registration and principal place of business, etc.",
+        "applicable_laws": "Prevention of Corruption Act, 1988; Indian Penal Code; other laws for the time being in force",
+        "key_clauses": {
+            "IV.2.ii": "The Port may verify the original documents of the copies submitted by the Bidder during evaluation or at any time, if required. In case the documents submitted by the bidders found to be forged/false, the port will take appropriate penal action including cancellation of the work order issued and blacklisting of the entity for a period of 3 years, forfeiture Bank Guarantee either jointly or severally.",
+            "V.1.a": "A bidder shall be debarred if he has been convicted of an offence under the Prevention of Corruption Act, 1988; or the Indian Penal Code or any other law for the time being in force, for causing any loss of life or property or causing a threat to public health as part of execution of a public procurement contract.",
+            "V.1.ii": "The Performance Security should remain valid for a period of 90(Ninety) days beyond the date of completion of all contractual obligations of the Successful Tenderer including statutory obligations and will be refunded/discharged thereafter without any interest after adjusting any dues to the Port.",
+            "V.2.iii": "The successful tenderer shall submit the performance security for an amount of 5% of the contract award price plus applicable GST as Bank Guarantee within twenty-one days of the receipt of the notification of the award of contract from the Employer."
+        },
+        "key_forms": {
+            "Form I": "Details of Firm - to be submitted as part of Part I (Technical Bid) for qualification verification",
+            "Form II": "Bid Security Declaration - to be submitted as part of Part I (Technical Bid)",
+            "Form III": "Bid Security (Bank Guarantee) - to be submitted as part of Part I (Technical Bid)",
+            "Form IV": "Declaration of Authorised Representative of the Bid - to authorise a Partner to represent the bidder; also serves as Contract Agreement template",
+            "Form V": "Tender Acceptance and Declaration on the Bid - to declare compliance with litigation and debarment criteria",
+            "Form VI": "Insurance Surety Bond towards Bid Bond - to be submitted as bid security in lieu of cash",
+            "Form VII": "Insurance Surety Bond towards Performance Security - to be submitted as performance security in lieu of cash"
+        },
+        "other_key_values": {
+            "emd_forfeiture": "Without valid EMD the bid stands disqualified",
+            "performance_security_deposit_period": "21 days from award notification (extendable 6 days in extraordinary circumstances)",
+            "performance_security_refund_period": "90 days beyond contract completion",
+            "contract_extension_terms": "Extendable for a period up to One year with the same rate (inflation considered 5%)",
+            "bid_submission_mode": "Tenders should be submitted online through GeM Portal",
+            "bid_document_transfer_prohibition": "Transfer of bid documents submitted by one intending Bidder to another is not permissible",
+            "canvassing_consequence": "Canvassing in any form by the Bidders will result in their tender being rejected",
+            "outstanding_dues_consequence": "Parties with outstanding dues to the Port as on NIT publication date shall not be allowed to participate",
+            "insurance_surety_bond_requirements": "To be on non-judicial stamp paper/e-stamp paper of appropriate value as per Stamp Act; payable at Mumbai/Navi Mumbai"
+        }
+    },
+    "summary": {
+        "summary": "The Jawaharlal Nehru Port Authority (JNPA) in Navi Mumbai, Maharashtra, is inviting bids for the appointment of a Chartered Accountancy firm to provide Financial Internal Audit Services, including the preparation of audit reports and financial reporting, under a two-year contract (2025–2027) with an optional one-year extension based on performance and agreed terms. Bidders must demonstrate experience in similar work with organizations having a turnover exceeding Rs. 980 crores over the past seven years and submit a bid security of Rs. 157,200 (inclusive of GST), unless exempted for MSE-certified small-scale industries. The tender, conducted via the GeM Portal, requires online submission of both technical and price bids, with strict rules against incomplete details, post-opening amendments, or canvassing, and all payments will be made in Indian Rupees. The contract terms emphasize adherence to statutory compliance, and JNPA reserves the right to reject any or all bids without explanation."
+    },
+    "key_points": [
+        {
+            "key_id": "CRIT_027",
+            "sub_category": "TURNOVER",
+            "point": "The entity must demonstrate an average annual turnover of at least Rs.20 Lakh per annum for the past 3 financial years, supported by three years of audited financial statements.",
+            "is_mqc": true,
+            "financial_tag": true,
+            "human_review": true,
+            "verdict": "FAIL",
+            "verdict_source": "python_authoritative",
+            "summary": "The company M S Kheria & Company submitted three years of audited financial statements, including the Balance Sheets for FY 2021-22 (page 3), FY 2022-23 (page 16), and FY 2023-24 (page 5). However, the average annual turnover calculated by Python is ₹1,107,353.82, which is significantly below the required threshold of ₹2,000,000.00. This directly indicates that the requirement for demonstrating an average annual turnover of at least Rs.20 Lakh per annum for the past 3 financial years is not met.",
+            "matched_docuements": [
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_3",
+                    "document_name": "Balance Sheet FY 2021-22 – M/S KHERIA & COMPANY",
+                    "status": "FOUND",
+                    "pages": [
+                        3
+                    ],
+                    "summary": "Document type: report; Company name: M/S KHERIA & COMPANY (CHARTERED ACCOUNTANTS); Document ID: FRN- 115438W; Date: July 25th, 2022; Total amount: ₹21,59,345.02; Balance Sheet as at 31st March 2022; Partner's Funds: ₹14,80,255.34; Duties & Taxes (GST Payable): ₹6,79,089.68; Fixed Assets: ₹65,972.78; Security Deposit: ₹1,00,000.00; Cash & Bank Balances: ₹4,67,007.14; TDS Receivable: ₹66,090.00; Loans & Advances: ₹13,06,650.60; Sundry Debtors: ₹1,53,624.50; The document includes signatures from Neha G. Kheria, Rahul S. Kheria, Gourav S. Kheria, and Anu Devendra Oswal, along with a rubber stamp from SATYA PRAKASH NATHANI & CO. CHARTERED ACCOUNTANTS.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2021-22",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "annual_turnover",
+                                    "value": 2159345,
+                                    "datatype": "currency",
+                                    "page": 3,
+                                    "snippet": "| **TOTAL** | | 21,59,345.02 |",
+                                    "confidence": 0.95,
+                                    "raw_value": "21,59,345.02"
+                                },
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2021-22",
+                                    "datatype": "string",
+                                    "page": 3,
+                                    "snippet": "Name: Balance Sheet FY 2021-22 – M/S KHERIA & COMPANY",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2021-22"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.88,
+                    "rag_score": 1.0,
+                    "llm_score": 0.8,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_4",
+                    "document_name": "Balance Sheet as at 31st March 2023 - M/S KHERIA & COMPANY",
+                    "status": "FOUND",
+                    "pages": [
+                        4
+                    ],
+                    "summary": "Balance Sheet of M/S KHERIA & COMPANY as at 31 March 2023. Total assets and liabilities are INR 34,85,462.18. The statement is certified by BHARAT SINGHAL & CO. (FRN-144666W), signed by Bharat Kumar (Proprietor), dated 25 September 2023, and bears signatures of the firm's partners along with the firm's stamp.",
+                    "records": [
+                        {
+                            "entity_id": "FY2023",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.8508,
+                    "rag_score": 0.9269,
+                    "llm_score": 0.8,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_5",
+                    "document_name": "Balance Sheet FY 2023-24 – M/S KHERIA & COMPANY – FRN-143492W",
+                    "status": "FOUND",
+                    "pages": [
+                        5
+                    ],
+                    "summary": "Document type: report; Company name: M/S KHERIA & COMPANY; Document ID: FRN-143492W; Date: September 29th, 2024; Total amount: 56,94,462.00; Balance Sheet as at 31st March 2024; Partner's Funds: 38,12,645.00 (2024), 30,96,313.56 (2023); Duties & Taxes (GST Payable): 6,754.00 (2024), 3,69,118.62 (2023); Trade Creditors: 18,880.00 (2024); Others: 18,56,183.00 (2024); Fixed Assets: 1,64,472.00 (2024), 1,27,549.74 (2023); Cash & Bank Balances: 2,46,851.00 (2024), 13,66,192.70 (2023); Loans & Advances: 51,45,645.00 (2024), 6,84,877.24 (2023); Signature lines for JAIN ABHISHEK P & CO. and Kheria & Company are visible; Stamps/seals from JAIN ABHISHEK P & CO. and Kheria & Company are present.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2023-24",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.8508,
+                    "rag_score": 0.9269,
+                    "llm_score": 0.8,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_34",
+                    "document_name": "Report – Khera & Co. – ₹515.00 Lakh",
+                    "status": "FOUND",
+                    "pages": [
+                        34
+                    ],
+                    "summary": "Document type: report; Company name: Khera & Co.; Total amount: 515.00 Lakh; Branch details include: 1) Branch Code: 24, Branch Name: BORIVALI, Product Types: CC and ECM; Borrowers: PATEL TRADING CO. (Account No: 357, Sanctioned Limit: 180.00 Lakh), WAYDEEP ENTERPRISES (Account No: 330, Sanctioned Limit: 300.00 Lakh; Account No: 431421, Sanctioned Limit: 35.00 Lakh); Authentication evidence includes top circular stamp with",
+                    "records": [
+                        {
+                            "entity_id": "doc_34",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.3774,
+                    "rag_score": 0.9435,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_31",
+                    "document_name": "Auditor's Report – Central Bank of India – Stock Valuation",
+                    "status": "PARTIAL",
+                    "pages": [
+                        31
+                    ],
+                    "summary": "Document type: report; Company name: Central Bank of India; Total amount: Rs. 50,000.00; The document outlines the verification methods for stock valuation, slow-moving items, insurance coverage, sundry debtors, credit facilities, fixed assets, and compliance with terms of sanction. It includes a fee structure for account audits based on working capital limits: Upto Rs.10 crores - Rs. 15,000.00; Above Rs.10 crores upto Rs.25 crores - Rs. 20,000.00; Above Rs. 25 crores upto Rs. 50 crores - Rs. 30,000.00; Above Rs. 50 crores upto Rs.100 crores - Rs. 40,000.00; Above Rs.100 crores - Rs. 50,000.00. No signatures, stamps, or certification text are visible.",
+                    "records": [],
+                    "selection_score": 0.3681,
+                    "rag_score": 0.9203,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_28",
+                    "document_name": "Letter of Appointment – Direct Taxation – M/s Kheria and Company – FY 2024-25",
+                    "status": "FOUND",
+                    "pages": [
+                        28
+                    ],
+                    "summary": "Document type: Appointment Letter; Company name: M/s Kheria and Company; Date: 24/03/2023; Scope of work includes Direct Taxation, TDS/TCS Compliance, and GST Compliance; No monetary amounts or document IDs visible; No signatures, rubber stamps, company seals, or certification text visible.",
+                    "records": [
+                        {
+                            "entity_id": "2024-2025",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "2024-2025",
+                                    "datatype": "string",
+                                    "page": 28,
+                                    "snippet": "statutory compliance and taxation matters for the financial year 2024-2025",
+                                    "confidence": 0.95,
+                                    "raw_value": "2024-2025"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.3376,
+                    "rag_score": 0.8439,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_29",
+                    "document_name": "Contract for Services – JSSK Matrix India Pvt Ltd – 24 Mar 2023",
+                    "status": "PARTIAL",
+                    "pages": [
+                        29
+                    ],
+                    "summary": "Document type: contract; Company name: JSSK Matrix India Pvt Ltd; Date: 24/03/2023; Services listed include Input Tax Credit reconciliation, GST registration amendments, representation before GST authorities, general accounting advice, MIS review, compliance reminders, and confidentiality clause; Acceptance requires signature from Sonal Rawat, Director; Page 29 of 61; No visible document ID or monetary amounts.",
+                    "records": [],
+                    "selection_score": 0.3256,
+                    "rag_score": 0.814,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_19",
+                    "document_name": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2021-22",
+                    "status": "FOUND",
+                    "pages": [
+                        19
+                    ],
+                    "summary": "Document type: letter; Company name: KHERIA & COMPANY; Document ID: DGM B&O/ THN/STAT-2021-22; Date: 04/04/2022; Audit of accounts for the year ending 31st March 2022; Branches allotted for auditing: 5088-PALM BEACH ROAD and 21464-VASUNDHARA HEIGHTS JUINAGAR; Controlling authority: Mr. Prabhupada Panda (Navi Mumbai); Contact number: 8422956123; Audit start date: 04.04.2022; Audit completion date: 14.04.2022; No monetary amounts visible; No signatures, rubber stamps, company seals, or certification text visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2021-22",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2021-22",
+                                    "datatype": "string",
+                                    "page": 19,
+                                    "snippet": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2021-22",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2021-22"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.218,
+                    "rag_score": 0.5449,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_20",
+                    "document_name": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2023-24",
+                    "status": "FOUND",
+                    "pages": [
+                        20
+                    ],
+                    "summary": "Document type: letter; Company name: KHERIA & COMPANY; Document ID: DGM (B&O)/OPS/969; Date: 28-Mar-24; Audit of accounts for the year ending 31st March 2024; Branches allotted for auditing: MULUND (WEST) MUMBAI, GAVANPADA MULUND (EAST); Controlling Authority: Mr. Ramji Lal; Contact Number: 9990011073; Deadline for audit work completion: 20.04.2024; No monetary amounts visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2023-24",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2023-24",
+                                    "datatype": "string",
+                                    "page": 20,
+                                    "snippet": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2023-24",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2023-24"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.214,
+                    "rag_score": 0.5349,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_16",
+                    "document_name": "Letter for Statutory Audit – KHERIA & COMPANY – FY 2022-23",
+                    "status": "FOUND",
+                    "pages": [
+                        16
+                    ],
+                    "summary": "Document type: letter; Company name: KHERIA & COMPANY; Document ID: DGM B&O/ THN/STAT-2023-24; Date: 03/04/2023; The letter informs KHERIA & COMPANY about the statutory audit for the year ending 31st March 2023; The document includes a table listing branch names and controlling authorities; The audit must be completed by 25.04.2023; No monetary amounts are mentioned; No signatures, stamps, or seals are visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2022-23",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2022-23",
+                                    "datatype": "string",
+                                    "page": 16,
+                                    "snippet": "Letter for Statutory Audit – KHERIA & COMPANY – FY 2022-23",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2022-23"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.2113,
+                    "rag_score": 0.5282,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_30",
+                    "document_name": "Letter for Stock Audit Assignment – KHERIA & COMPANY – FY 2025-26",
+                    "status": "FOUND",
+                    "pages": [
+                        30
+                    ],
+                    "summary": "Document type: letter; Issuer: Central Bank of India; Document ID: MMZO/CRMON/2025-26; Date: 23-07-2025; Recipient: KHERIA & COMPANY CHARTERED ACCOUNTANTS; Address: 513, 5Th Floor, Kosha Kommercial Komplex, Behind Laxmi Narayan Shopping Centre, Poddar Road, Malad East Mumbai - 400097; Contact: Ph: 9619831080, Email: kheriaandcompany@gmail.com; Subject: Allotment of Stock Audit for FY 2025-26; Assigned account: HNI Office India Ltd. (BP Ergo Ltd); Relationship Manager: A. Kishore, Ph no. 8919427762, Email: cfbcbi@gmail.com; Scope of assignment includes verification of loan receivables, assessment of financial indicators, compliance with regulatory guidelines, comments on Asset Liability Management, analysis of asset movement, verification of documents/securities, and maintenance of current accounts; No monetary amounts or authentication evidence visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 30,
+                                    "snippet": "Reg: Allotment of Stock Audit for FY 2025-26",
+                                    "confidence": 0.95,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.2073,
+                    "rag_score": 0.5183,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_17",
+                    "document_name": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2024-25",
+                    "status": "FOUND",
+                    "pages": [
+                        17
+                    ],
+                    "summary": "Document type: letter; Issuer: KHERIA & COMPANY; Document ID: REF NO:AUD/24-25/ALOT/01; Date: 31/03/2025; Audit of accounts for the year ending 31st March 2025; Branches allotted for auditing: PALM BEACH ROAD (5088) and TURBHE (61519); Contact persons listed with phone numbers; Last audit firms mentioned: H P CHAUDHARY & CO and KISHOR SHETH & CO; No monetary amounts visible; No signatures, stamps, or seals present.",
+                    "records": [
+                        {
+                            "entity_id": "2024-25",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "2024-25",
+                                    "datatype": "string",
+                                    "page": 17,
+                                    "snippet": "STATUTORY AUDIT 2024-25",
+                                    "confidence": 0.95,
+                                    "raw_value": "2024-25"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.2046,
+                    "rag_score": 0.5116,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_32",
+                    "document_name": "Letter for Stock Audit Assignment – Central Bank of India – 10 Aug 2025",
+                    "status": "PARTIAL",
+                    "pages": [
+                        32
+                    ],
+                    "summary": "Document type: letter; Issuer: Central Bank of India; Date: 10/08/2025; Inspection must be completed by 10/10/2025; 3 certified copies of stock audit reports to be submitted within 3 days after completion; Non-acceptance of audit assignment if appointed for statutory audit of branches under the zone; Acceptance must be communicated by 10/08/2025; Failure to submit report on time will result in removal from the Panel; Signed by Amarish Kumar Singh, Assistant General Manager-MMZO.",
+                    "records": [],
+                    "selection_score": 0.202,
+                    "rag_score": 0.505,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_18",
+                    "document_name": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2022-23",
+                    "status": "FOUND",
+                    "pages": [
+                        18
+                    ],
+                    "summary": "Document type: letter; Issuer: SBI; Recipient: KHERIA & COMPANY; Document ID: REF NO: AO-East Mum/AUD/SS/21; Date: 03rd April, 2023; Audit of accounts for the year ending 31st March 2023; Branch allotted: NHAVASHEVA PORT PROJECT (07491); Controlling authority: MR. ASHLOK SINGH, CHIEF MANAGER (OPS), STATE BANK OF INDIA; Contact number: 9619555935; Audit start date: 04.04.2023; Audit completion date: 14.04.2023; No monetary amounts visible; Circular seal with text 'KHERIA & COMPANY' and 'CHARTERED ACCOUNTANTS' visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2022-23",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2022-23",
+                                    "datatype": "string",
+                                    "page": 18,
+                                    "snippet": "Letter for Audit Assignment – KHERIA & COMPANY – FY 2022-23",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2022-23"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.198,
+                    "rag_score": 0.495,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_6",
+                    "document_name": "Letter for Stock Audit Assignment – Bank of India – FY 2025-26 – NMZ/CrMD/SA/KK/204",
+                    "status": "FOUND",
+                    "pages": [
+                        6
+                    ],
+                    "summary": "Document type: letter; Party names: Bank of India, KHERIA & COMPANY, M/s VICHI AGRO PRODUCTS PVT LTD; Document ID: NMZ/CrMD/SA/KK/2025-26/204; Date: 04/09/2025; Assignment for Stock Audit from 01-01-2025 till 31-08-2025; Report submission deadline: 30-09-2025; Contact details for Turbhe Branch and Zonal office provided; Identification required for audit; Stamps visible: 'Classification: Internal' and 'KHERIA & COMPANY' with a signature.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 6,
+                                    "snippet": "Letter for Stock Audit Assignment – Bank of India – FY 2025-26 – NMZ/CrMD/SA/KK/204",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1954,
+                    "rag_score": 0.4884,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_9",
+                    "document_name": "Contract for Internal Audit Services – Saraswat Cooperative Bank – Ref No SCB/IAD/CA/2025-26/005",
+                    "status": "PARTIAL",
+                    "pages": [
+                        9
+                    ],
+                    "summary": "Document type: contract; Parties involved: Saraswat Cooperative Bank Limited and kheria and Company, Chartered Accountants; Document ID: Ref No SCB/IAD/CA/2025-26/005; Date: 29-Mar-2025; Total amount: not specified; The document outlines the engagement of kheria and Company for Concurrent/Internal Audit services for Saraswat Bank, detailing the appointment terms, fees and payment conditions, taxation responsibilities, and representations by the Auditor. No signature lines, rubber stamps, or company seals are visible.",
+                    "records": [],
+                    "selection_score": 0.1927,
+                    "rag_score": 0.4817,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_10",
+                    "document_name": "Letter for Stock Audit Approval – Zoroastrian Co-operative Bank Ltd. – FY 2025-26",
+                    "status": "FOUND",
+                    "pages": [
+                        10
+                    ],
+                    "summary": "Document type: letter; Issuer: Zoroastrian Co-operative Bank Ltd.; Recipient: Kheria & Company - Chartered Accountants; Document ID: ZCBL/CO/AUD/25-26/44; Date: October 27, 2025; Total amount: Rs 100.00 lakhs; The Management has approved Kheria & Company as Stock Auditor; Stock Audit of borrowal accounts with working capital limits of Rs 100.00 lakhs and above to be done annually; Report submission deadline: November 20, 2025; Report to be submitted to Audit Department, CDMD, respective branch, Risk Department, and Credit Department; Basic fee for inspection as per attached list; GST/CGST applicable; Coordination required with Branch Manager and CDMD officials; Bank officials will assist in fixing appointments but will not accompany for actual visits; Acceptance requested on duplicate of the letter; Signature: Rakesh Sharma, DGM Audit Head; CC to Branch Head; Corporate Office address: Nirvan House, 5th Floor, Dr Annie Besant Road, Worli, Mumbai - 400 030; Circular seal present with text: 'KHERIA & COMPANY', 'MUMBAI', 'CHARTERED ACCOUNTANTS'.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "annual_turnover",
+                                    "value": 10000000,
+                                    "datatype": "currency",
+                                    "page": 10,
+                                    "snippet": "working capital limits of Rs 100.00 lakhs and",
+                                    "confidence": 0.95,
+                                    "raw_value": "Rs 100.00 lakhs"
+                                },
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 10,
+                                    "snippet": "Letter for Stock Audit Approval – Zoroastrian Co-operative Bank Ltd. – FY 2025-26",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.19,
+                    "rag_score": 0.4751,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_13",
+                    "document_name": "Letter for Onsite Audit Assignment – Kheria & Company – FY 2025-26",
+                    "status": "FOUND",
+                    "pages": [
+                        13
+                    ],
+                    "summary": "Document type: letter; Issuer: Kheria & Company; Document ID: CO: CA&ID: MKM: 2024-25:1746; Date: 04/04/2025; Total amount: ₹.33000/-; Subject: Onsite concurrent audit assignment of Sunder Nagar Goregaon Branch (Code: 1246), under NMRO Region for FY 2025-26; Assignment duration: 01.04.2025 to 31.03.2026; Monthly remuneration of ₹.33000/-; No additional benefits or perquisites; GST applicable; TDS deduction as per rules; Fee payable after submission of complete report; No reimbursement for travel or halting; Resignation without notice affects payment; No visible signatures, stamps, or seals.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "annual_turnover",
+                                    "value": 33000,
+                                    "datatype": "currency",
+                                    "page": 13,
+                                    "snippet": "entitled for monthly fees/ remuneration of ₹.33000/- (In words Rupees",
+                                    "confidence": 0.95,
+                                    "raw_value": "₹.33000/-"
+                                },
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 13,
+                                    "snippet": "for FY 2025-26. We are pleased to assign onsite",
+                                    "confidence": 0.95,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1874,
+                    "rag_score": 0.4684,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_33",
+                    "document_name": "Letter for Stock and Book Debts Audit – M/s Kheria & Co. – 01 Jan 2026",
+                    "status": "FOUND",
+                    "pages": [
+                        33
+                    ],
+                    "summary": "Document type: letter; Issuer: ABHYUDAYA CO-OPERATIVE BANK LTD.; Document ID: Insp./1025 26; Date: 01st January 2026; Total Amount: Rs. 1 Core; Subject: Stock and Book Debts audit of the Borrowers of the Bank; Recipient: M/s Kheria & Co.; Address: S13, 5th Floor, Kosha Kommerclal Complex, Behind Laxmi Narayan Shopping Centre, Poddar Road, Malad (East), Mumbai-400 097; Contact: 9619831080/9321498143, kheriaandcompany@gmail.com; Terms and conditions for audit include verification of stock, reconciliation with accounting records, valuation comments, analysis of debtors, and sourcing of materials; Document includes a circular stamp of ABHYUDAYA CO-OPERATIVE BANK LTD. on the bottom right.",
+                    "records": [
+                        {
+                            "entity_id": "doc_33",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "annual_turnover",
+                                    "value": 1,
+                                    "datatype": "currency",
+                                    "page": 33,
+                                    "snippet": "Borrowers of the Bank – Rs. 1 Core and above",
+                                    "confidence": 0.95,
+                                    "raw_value": "Rs. 1 Core"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1847,
+                    "rag_score": 0.4618,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_15",
+                    "document_name": "Letter of Appointment – Concurrent Auditor – KHERIA AND COMPANY – FY 2025-26",
+                    "status": "FOUND",
+                    "pages": [
+                        15
+                    ],
+                    "summary": "Document type: letter; Party names: Bank of India, KHERIA AND COMPANY; Document ID: Ref.No:BOI:HO:I&A:AN:2025-26:1516; Date: 8/16/2025; Total amount: Rs.15,000/- monthly remuneration; The letter discusses the selection of KHERIA AND COMPANY as Concurrent Auditor for the 198-Terminal Benefit Department-HO; The audit contract duration is from 7/1/2025 to 6/30/2028; Monthly audit frequency; Additional Rs.10,000/- for branches linked with Currency Chest; GST applicable; TDS on monthly basis; Declaration of Fidelity and Secrecy required; No visible signatures, stamps, or seals.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 15,
+                                    "snippet": "Letter of Appointment – Concurrent Auditor – KHERIA AND COMPANY – FY 2025-26",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1768,
+                    "rag_score": 0.4419,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_43",
+                    "document_name": "CPE Credits Report – KHERIA & COMPANY – 23 Mar 2017",
+                    "status": "PARTIAL",
+                    "pages": [
+                        43
+                    ],
+                    "summary": "This document appears to be a report or form detailing various tables including COP cancellations, post qualification details, employment details, firm/sole practice details, and article/audit training. The firm name is KHERIA & COMPANY with firm number 144903W. The date mentioned is 23-MAR-2017, with a total of 25 CPE credits recorded. There are no visible signatures, stamps, or seals.",
+                    "records": [],
+                    "selection_score": 0.1754,
+                    "rag_score": 0.4385,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_56",
+                    "document_name": "Partnership Agreement – KHERIA & COMPANY – FY 2023-24",
+                    "status": "FOUND",
+                    "pages": [
+                        56
+                    ],
+                    "summary": "Document type: agreement; Parties involved: Neha, Rahul, Gourav, Rani, Abha; Yearly remuneration payable to Partners credited at the close of the accounting period ending 31st March; Partners declare no other remuneration from other firms without permission; Partners can draw yearly remuneration during the year; Accounting year defined as Financial Year from 1st April to 31st March; Profit/loss distribution among Partners: Neha 25%, Rahul 40%, Gourav 25%, Rani 5%, Abha 5%; Total distribution 100%; Signatures visible: Neha, Rahul, Rani Bayoria, Abha Goury; Stamp: Circular seal with text 'KHERIA & COMPANY' at the top, 'MUMBAI' in the center, and 'CHARTERED ACCOUNTANTS' at the bottom.",
+                    "records": [
+                        {
+                            "entity_id": "Financial Year from 1st April to 31st March",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "Financial Year from 1st April to 31st March",
+                                    "datatype": "string",
+                                    "page": 56,
+                                    "snippet": "The Accounting year of the said firm will be Financial Year from 1st April to 31st March.",
+                                    "confidence": 0.95,
+                                    "raw_value": "Financial Year from 1st April to 31st March"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1728,
+                    "rag_score": 0.4319,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_37",
+                    "document_name": "Certificate – Disclaimer – Sushil Kheria et al. – 30 Dec 2021",
+                    "status": "FOUND",
+                    "pages": [
+                        37
+                    ],
+                    "summary": "Document type: certificate; Party names: Sushil Kheria, Gourav Kheria, Neha Gourav Kheria, Rani Bajoria, Abha Garg; Document IDs: 175162, 429397, 450963, 575272; Dates: 30/12/2021, 28/11/2016, 13/01/2022, 08/09/2016, 18/05/2017, 31/08/2015, 31/08/2020, 22/06/2020, 25/12/2024, 03/12/2024, 21/01/2024; No monetary amounts visible; Contains a disclaimer about discrepancies; Page 37 of 61; Signature lines or stamps not visible.",
+                    "records": [
+                        {
+                            "entity_id": "30/12/2021",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1701,
+                    "rag_score": 0.4252,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_12",
+                    "document_name": "Letter for Revenue Audit – M/s Kheria & Company – FY 2024-25",
+                    "status": "FOUND",
+                    "pages": [
+                        12
+                    ],
+                    "summary": "Document type: letter; Issuer: Indian Overseas Bank; Document ID: No.CO/INS/174/RA/696 /2024-25; Date: 12.03.2025; Subject: REVENUE AUDIT- 2024 (PERIOD FROM 01.01.2024 TO 31.12.2024); Recipient: M/s KHERIA & COMPANY; Contact: Mobile No.: 9619831080, Email ID: RAHUL.KHERIA41@GMAIL.COM; The letter entrusts the revenue audit for the specified period; Seal of Indian Overseas Bank is visible; No monetary amounts are mentioned.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2024-25",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2024-25",
+                                    "datatype": "string",
+                                    "page": 12,
+                                    "snippet": "Letter for Revenue Audit – M/s Kheria & Company – FY 2024-25",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2024-25"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1688,
+                    "rag_score": 0.4219,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_25",
+                    "document_name": "Letter for Stock Audit – Kheria & Company – M/s Agrasen Ship Breakers Pvt Ltd – FY 2023-24",
+                    "status": "FOUND",
+                    "pages": [
+                        25
+                    ],
+                    "summary": "Document type: letter; Parties involved: Kheria & Company, Indian Overseas Bank, Umesh Chandra Dora; Document ID: No.CO/LRMD/ 129/SA/2023-24; Date: February 7, 2024; The email discusses the allotment of a stock audit for M/s Agrasen Ship Breakers Pvt. Ltd. and requests immediate follow-up with the auditor for completion. No monetary amounts are mentioned. There are no visible signatures, rubber stamps, or company seals.",
+                    "records": [
+                        {
+                            "entity_id": "2023-24",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "2023-24",
+                                    "datatype": "string",
+                                    "page": 25,
+                                    "snippet": "No.CO/LRMD/ 129/SA/2023-24 Date:- 26/09/2023",
+                                    "confidence": 0.95,
+                                    "raw_value": "2023-24"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1634,
+                    "rag_score": 0.4086,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_27",
+                    "document_name": "Letter of Appointment – Stock Auditor – Kheria & Company – FY 2025-26",
+                    "status": "FOUND",
+                    "pages": [
+                        27
+                    ],
+                    "summary": "Document type: letter; Issuer: DMK JAOLI BANK; Document ID: DMKJSB/Audit/ July/2025-26; Date: 27/06/2025; Appointment of Kheria & Company as Stock Auditor for FY 2025-26 (AY 2026-27) for branches in Kokan Nagar, Ghatkopar, LBS Road Bhandup, Vikhroli, Thane, & Dombivli; Scope of Stock Audit includes physical verification of stock, verification of condition of storage, valuation of stock, age-wise categorization of stock, reconciliation of stock statement, and verification of documents/securities; Company seal visible on the document.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 27,
+                                    "snippet": "appointed as Stock Auditor of the Bank for F. Y. 2025-26 (AY 2026-27)",
+                                    "confidence": 0.95,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1621,
+                    "rag_score": 0.4053,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_2",
+                    "document_name": "Certificate – Disclaimer – 30 Dec 2021",
+                    "status": "FOUND",
+                    "pages": [
+                        2
+                    ],
+                    "summary": "Document type: certificate; Party names: Sushil Kheria, Gourav Kheria, Neha Gourav Kheria, Rani Bajoria, Abha Garg; Document IDs: 175162, 429397, 450963, 575272; Dates: 30/12/2021, 28/11/2016, 13/01/2022, 08/09/2016, 18/05/2017, 31/08/2015, 31/08/2020, 22/06/2020, 25/12/2024, 03/12/2024, 21/01/2024; No monetary amounts visible; Contains a disclaimer about discrepancies; No signature lines, rubber stamps, company seals, or certification text visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY2021",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1581,
+                    "rag_score": 0.3953,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_11",
+                    "document_name": "Remuneration Agreement – C T Pundole And Sons Pvt Ltd & Gold Seal Engineering Products Pvt Ltd – THE COROASTRIAN CO-OPERATIVE BANK LIMITED",
+                    "status": "PARTIAL",
+                    "pages": [
+                        11
+                    ],
+                    "summary": "Document type is unknown; Company name is THE COROASTRIAN CO-OPERATIVE BANK LIMITED; Page 11 of 61 indicates continuation; Total remuneration for services is Rs 10,000/- + GST for each of the two borrowers listed; Borrowers include C T Pundole And Sons Pvt Ltd and Gold Seal Engineering Products Pvt Ltd; Branches are Pune and Thane respectively; Contact details for branch managers are provided; A circular stamp with the bank's name is visible; No specific document ID or date is mentioned.",
+                    "records": [],
+                    "selection_score": 0.1542,
+                    "rag_score": 0.3854,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_50",
+                    "document_name": "Form I – Kheria and Company – 14 Jan 2026",
+                    "status": "PARTIAL",
+                    "pages": [
+                        50
+                    ],
+                    "summary": "Document type: Form; Company name: Kheria and Company; Document ID: Form I; Date: 14/01/2026; Address: 513/ Kosha Kommercial Komplex, Poddar Road, Malad [E], Mumbai-400097; Mobile No: 9619831080; Email: kheriaandcompany@gmail.com; No. of years in business: 9 Years; PAN No.: AATFK8871E; C&AG Empanelment details: BO2078; GST Registration Number: 27AATFK8871E1ZO; Deed of Partnership: 25-12-2024; Total staff strength: 18 (5 Qualified CA/CMA’s, 5 Partners, 3 Paid CA/CMA’s, 1 CISA/DISA Certified, 13 Graduates); Any other document: MSME Attached; Signature: Rahul Sushil Kheria, Partner, Membership No: 175161; Place: Mumbai.",
+                    "records": [],
+                    "selection_score": 0.1528,
+                    "rag_score": 0.3821,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_23",
+                    "document_name": "Letter for Revenue Audit – M/s Kheria & Company – FY 2024-25",
+                    "status": "FOUND",
+                    "pages": [
+                        23
+                    ],
+                    "summary": "Document type: letter; Issuer: Indian Overseas Bank; Document ID: No.CO/INS/174/RA/696/2024-25; Date: 12.03.2025; Subject: REVENUE AUDIT- 2024 (PERIOD FROM 01.01.2024 TO 31.12.2024); Parties involved: Deepak Gupta (Chief Manager), M/s KHERIA & COMPANY (Chartered/Cost Accountants); Contact details: 022-22174158/155/156 for Indian Overseas Bank, Mobile No.: 9619831080 for M/s KHERIA & COMPANY; No monetary amounts visible; Company seal description: M/s KHERIA & COMPANY Chartered/Cost Accountants Mumbai (circular seal with text 'M/s KHERIA & COMPANY' and 'Chartered/Cost Accountants Mumbai').",
+                    "records": [
+                        {
+                            "entity_id": "2024",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "2024",
+                                    "datatype": "string",
+                                    "page": 23,
+                                    "snippet": "REVENUE AUDIT- 2024 (PERIOD FROM 01.01.2024",
+                                    "confidence": 0.95,
+                                    "raw_value": "2024"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1515,
+                    "rag_score": 0.3787,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_26",
+                    "document_name": "Letter of Empanelment – KHERIA & COMPANY – FY 2023-24",
+                    "status": "FOUND",
+                    "pages": [
+                        26
+                    ],
+                    "summary": "Document type: letter; Parties involved: KHERIA & COMPANY and Jammu & Kashmir Bank Limited; Document ID: JKB/S&C/CHQ/SA/2023; Date: 31 March, 2023; The letter informs KHERIA & COMPANY of their approval for empanelment as Stock Auditor for the financial years 2023-24, 2024-25, and 2025-26; The empanelment does not guarantee any contract of service/employment; The Bank reserves the right to terminate the empanelment if unfair practices or professional misconduct are found; No monetary amounts are mentioned; No signatures, stamps, or seals are visible.",
+                    "records": [
+                        {
+                            "entity_id": "2023-24",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "2023-24",
+                                    "datatype": "string",
+                                    "page": 26,
+                                    "snippet": "The empanelment is for a financial year 2023-24, 2024-25 & 2025-26.",
+                                    "confidence": 0.95,
+                                    "raw_value": "2023-24",
+                                    "value_verified": true,
+                                    "value_verification_reason": "correct"
+                                },
+                                {
+                                    "name": "financial_year",
+                                    "value": "2024-25",
+                                    "datatype": "string",
+                                    "page": 26,
+                                    "snippet": "The empanelment is for a financial year 2023-24, 2024-25 & 2025-26.",
+                                    "confidence": 0.95,
+                                    "raw_value": "2024-25",
+                                    "value_verified": true,
+                                    "value_verification_reason": "correct"
+                                },
+                                {
+                                    "name": "financial_year",
+                                    "value": "2025-26",
+                                    "datatype": "string",
+                                    "page": 26,
+                                    "snippet": "The empanelment is for a financial year 2023-24, 2024-25 & 2025-26.",
+                                    "confidence": 0.95,
+                                    "raw_value": "2025-26",
+                                    "value_verified": true,
+                                    "value_verification_reason": "correct"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1488,
+                    "rag_score": 0.3721,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_24",
+                    "document_name": "Letter for Stock Audit – Kheria and Company – M/s Shingar Limited – FY 2023-24",
+                    "status": "FOUND",
+                    "pages": [
+                        24
+                    ],
+                    "summary": "Document type: letter; Party names: Kheria and Company, Indian Overseas Bank; Document ID: No.CO/LRMD/ 130/SA/2023-24; Date: 27/09/2023; Subject: Allotment of Stock Audit; Account: M/s SHINGAR LIMITED; No monetary amounts visible; No signatures, rubber stamps, company seals, or certification text visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2023-24",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2023-24",
+                                    "datatype": "string",
+                                    "page": 24,
+                                    "snippet": "Letter for Stock Audit – Kheria and Company – M/s Shingar Limited – FY 2023-24",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2023-24"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1475,
+                    "rag_score": 0.3688,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_41",
+                    "document_name": "Permanent Account Number Card – KHERIA & COMPANY – AATFK8871E – 18 May 2017",
+                    "status": "PARTIAL",
+                    "pages": [
+                        41
+                    ],
+                    "summary": "Document type: Permanent Account Number Card; Company name: KHERIA & COMPANY; Document ID: AATFK8871E; Date of incorporation: 18/05/2017; Contact information for lost card: Income Tax PAN Services Unit, NSDL, 5th Floor, Mantri Sterling, Plot No. 341, Survey No. 997/8, Model Colony, Near Deep Bungalow Chowk, Pune - 411 016; Telephone: 91-20-2721 8080, Fax: 91-20-2721 8081, Email: tininfo@nsdl.co.in; Contains a stamp for KHERIA & COMPANY, Chartered Accountants, Mumbai with a signature in the center.",
+                    "records": [],
+                    "selection_score": 0.1462,
+                    "rag_score": 0.3654,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_21",
+                    "document_name": "Letter of Assignment – Concurrent Audit – Kheria & Company – FY 2025-26",
+                    "status": "FOUND",
+                    "pages": [
+                        21
+                    ],
+                    "summary": "Document type: letter; Company name: Kheria & Company; Date: Wed, Jul 2, 2025; Assignment details: IDBI Bank has identified Kheria & Company for the Concurrent Audit assignment; Branch Name: CBD Belapur; Branch SOL ID & Vertical: Sol – 998, NBS (Cash Management Services Operations, Sol -998 and Government Business Group, Sol-998); Branch Address: IDBI Bank Ltd., Annex Building, 6th Floor, Plot No 39-40-41, Sector 11, CBD Belapur, Navi Mumbai, Pincode: 400614, Maharashtra; No monetary amounts, signatures, stamps, or seals visible.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2025-26",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2025-26",
+                                    "datatype": "string",
+                                    "page": 21,
+                                    "snippet": "Concurrent Audit Assignment for 2025-26",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2025-26"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1448,
+                    "rag_score": 0.3621,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_14",
+                    "document_name": "Letter of Assignment – Concurrent Auditor – M/s Kheria & Company – FY 2024-25",
+                    "status": "PARTIAL",
+                    "pages": [
+                        14
+                    ],
+                    "summary": "Document type: letter; Company name: Bank of Baroda; Document ID: ZIAD: CA: 53: 90; Date: 19.04.2024; Total amount: Rs. 45000/-; Recipient: M/s. KHERIA AND COMPANY, Chartered Accountants, 20, 1st Floor, Laxmi Narayan Shopping Centre, Poddar Road, Malad East, Mumbai, 400097; Subject: Offer of assignment as Concurrent Auditor of the THANE-WEST Branch, MUMBAI METRO EAST REGION MUMBAI ZONE; Terms of Assignment: Period of empanelment: 3 years from 01.04.2024 to 31.03.2027; Period of appointment: 12 months from 01.04.2024 to 31.03.2025; Allotted Branches/Offices: THANE-WEST Branch, MUMBAI METRO EAST REGION; Fee payable per month: Rs. 45000/- only; Contact for clarifications: The Dy. General Manager, Bank of Baroda, Zonal Internal Audit Division, 17th B. 4th Floor, Dena Bank Building, Horniman Circle, Fort, Mumbai - 400 001, India; Broad objectives of the assignment include improving the effectiveness of concurrent audit, continuous review of transactions, immediate reporting of violations, and ensuring quality of credit portfolio; Document includes a stamp with text: 'ZONAL INTERNAL AUDIT DIVISION' and the Bank of Baroda logo.",
+                    "records": [],
+                    "selection_score": 0.1435,
+                    "rag_score": 0.3588,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_45",
+                    "document_name": "Membership Removal Details – KHERIA & COMPANY – 23 Mar 2017",
+                    "status": "PARTIAL",
+                    "pages": [
+                        45
+                    ],
+                    "summary": "Document type is unknown; Company name is KHERIA & COMPANY; Document ID is 144903W; Date is 23-MAR-2017; Total amount is 0 Hrs.; Membership removals, COP cancellations, post qualification details, employment details, firm/sole practice details, and article/audit training details are listed; No visible signatures, stamps, or seals.",
+                    "records": [],
+                    "selection_score": 0.1409,
+                    "rag_score": 0.3522,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_48",
+                    "document_name": "Form V – Kheria & Company – No Litigation Declaration",
+                    "status": "PARTIAL",
+                    "pages": [
+                        48
+                    ],
+                    "summary": "Document type: form; Company name: Kheria & Company; Document ID: FORM V; No date visible; No monetary amounts visible; The document includes a declaration of no litigation involvement for the past five years; It states that the company is not blacklisted in the last three years; The tender document was obtained from the Central Public Procurement Portal; The company certifies that they have read and will abide by the tender terms from Page No. 17 to 20; There are no deviations from the tender conditions; No signature lines, rubber stamps, or company seals visible.",
+                    "records": [],
+                    "selection_score": 0.1395,
+                    "rag_score": 0.3488,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_22",
+                    "document_name": "Letter of Appointment – Concurrent Auditor – M/s Kheria & Company – FY 2023-24",
+                    "status": "FOUND",
+                    "pages": [
+                        22
+                    ],
+                    "summary": "Document type is a letter; addressed to M/s. KHERIA & COMPANY; document ID is लेपिन/समवत(cid:334) लेखापरी(cid:407)ा/A&I:CCA:Fresh /662/2023-24; date of issue is 31.03.2023; total amount payable is Rs.30000 /- (Rupees Thirty Thousand only) per month + GST; the letter informs about the appointment as Concurrent Auditor at the 580015 - TERMINAL BENEFIT DVN CO Branch for the term from 01.04.2023 to 31.03.2024; mentions that the maximum audit tenure is for 3 Financial years; discretion of empanelment/appointment/renewals/termination lies with the competent authority of the Bank; no other expenses will be paid by the Bank; no visible signatures, stamps, or seals are present.",
+                    "records": [
+                        {
+                            "entity_id": "FY 2023-24",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [
+                                {
+                                    "name": "financial_year",
+                                    "value": "FY 2023-24",
+                                    "datatype": "string",
+                                    "page": 22,
+                                    "snippet": "M/s KHERIA & COMPANY – FY 2023-24",
+                                    "confidence": 0.7,
+                                    "raw_value": "FY 2023-24"
+                                }
+                            ],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1382,
+                    "rag_score": 0.3455,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_51",
+                    "document_name": "Annexure of Partners – Kheria & Company – 26 Jul 2018",
+                    "status": "PARTIAL",
+                    "pages": [
+                        51
+                    ],
+                    "summary": "This document is an annexure detailing the full-time partners of Kheria & Company, Chartered Accountants, and particulars of branches. The partners listed include Rahul Sushil Kheria (Membership No. 175161, FCA, joined on 26-07-2018, residing in Mumbai), Gourav Sushil Kheria (Membership No. 175162, FCA, joined on 28-11-2016, residing in Mumbai), Neha G Kheria (Membership No. 429397, FCA, joined on 31-08-2015, residing in Mumbai), Rani Bajoria (Membership No. 450963, ACA, joined on 08-09-2020, residing in Thane), and Abha Garg (Membership No. 575272, ACA, joined on 03-12-2024, residing in Delhi NCR). The branches include locations in Mumbai, Thane, Delhi NCR, and West Bengal, with specific addresses and contact numbers provided. No signatures, stamps, or seals are visible.",
+                    "records": [],
+                    "selection_score": 0.1369,
+                    "rag_score": 0.3422,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_35",
+                    "document_name": "Membership Certificate – GOURAV KHERIA – 10 Feb 2022",
+                    "status": "PARTIAL",
+                    "pages": [
+                        35
+                    ],
+                    "summary": "Document type: certificate; Issuer: The Institute of Chartered Accountants of India; Recipient: GOURAV KHERIA; Membership No.: 175162; Date of issue: 10th day of February, 2022; Certification text indicates successful completion of practical training and passing of the Information Systems Audit (ISA) Assessment Test (2.0) conducted in January 2022; Signatures present: Jai Kumar Batra (SECRETARY), Nihar N Jambusaria (PRESIDENT); Common seal of The Institute of Chartered Accountants of India is visible.",
+                    "records": [],
+                    "selection_score": 0.1356,
+                    "rag_score": 0.3389,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_1",
+                    "document_name": "Certificate of Admission as Partner – M/s. KHERIA & COMPANY – 08 Aug 2018",
+                    "status": "PARTIAL",
+                    "pages": [
+                        1
+                    ],
+                    "summary": "Document type: certificate; Company name: M/s. KHERIA & COMPANY; Document ID: Regn. No.(F.R.N) 144903W; Date of admission as Partner/Proprietor: 08/08/2018; Year of establishment: 18/05/2017; Firm GSTIN: not provided; Partner name: RAHUL; Membership type: FCA; Membership number: 175161; Admission date as Partner: 08/08/2018; Deemed date: 26/07/2018; FCA date: 14/01/2022; ACA date: 08/09/2016; No monetary amounts visible; No signatures, rubber stamps, or company seals visible.",
+                    "records": [],
+                    "selection_score": 0.1342,
+                    "rag_score": 0.3355,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_60",
+                    "document_name": "Udyam Registration Certificate – M/S KHERIA & COMPANY – FY 2024-25",
+                    "status": "FOUND",
+                    "pages": [
+                        60
+                    ],
+                    "summary": "Document type: UDYAM REGISTRATION CERTIFICATE; Company name: M/S KHERIA & COMPANY; Document ID: UDYAM-MH-18-0169812; Date of incorporation/registration: 18/05/2017; Date of commencement of production/business: 18/05/2017; Classification year: 2024-25, Enterprise type: Micro, Classification date: 27/04/2024; Udyog Aadhaar: MH18D0057196; Address: 513, 5th floor, Kosha Kommercial Komplex, Poddar Road, Malad East, Mumbai, Maharashtra, District: Mumbai Suburban, Pin: 400097; Mobile: 9619831080; Email: kheriaandcompany@gmail.com; Major activity: Legal and accounting activities; NIC 2 Digit: 69; NIC 4 Digit: 6920; NIC 5 Digit: 69201; Services; No visible signatures, rubber stamps, company seals, or certification text.",
+                    "records": [
+                        {
+                            "entity_id": "2024-25",
+                            "group": null,
+                            "group_value": null,
+                            "fields": [],
+                            "entity_mentions": []
+                        }
+                    ],
+                    "selection_score": 0.1329,
+                    "rag_score": 0.3322,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_47",
+                    "document_name": "Membership Status Report – KHERIA & COMPANY – 23 Mar 2017",
+                    "status": "PARTIAL",
+                    "pages": [
+                        47
+                    ],
+                    "summary": "This document appears to be a report or form detailing various aspects of a member's professional status. It includes tables for membership removals, COP cancellations, post qualification details, employment details, firm/sole practice details, and audit training. The firm name listed is KHERIA & COMPANY located in Mumbai, with a firm number of 144903W. The document is dated 23-MAR-2017. There are no monetary amounts or signatures visible on this page.",
+                    "records": [],
+                    "selection_score": 0.1316,
+                    "rag_score": 0.3289,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_36",
+                    "document_name": "Partnership Certificate – M/s KHERIA & COMPANY – Regn. No. 144903W – 08 Aug 2018",
+                    "status": "PARTIAL",
+                    "pages": [
+                        36
+                    ],
+                    "summary": "Document type: certificate; Company name: M/s. KHERIA & COMPANY; Document ID: Regn. No.(F.R.N) 144903W; Date: 08/08/2018; Year of Establishment: 18/05/2017; Date from which it is continuing as a Partnership: 08/08/2018; Partner Name: RAHUL; Membership Number: 175161; Admission Date as Partner/Proprietor: 08/08/2018; Deemed Date: 26/07/2018; FCA Date: 14/01/2022; ACA Date: 08/09/2016; No monetary amounts visible; Certification text present.",
+                    "records": [],
+                    "selection_score": 0.1289,
+                    "rag_score": 0.3223,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_57",
+                    "document_name": "Partnership Agreement – Nehk & Akheria et al.",
+                    "status": "PARTIAL",
+                    "pages": [
+                        57
+                    ],
+                    "summary": "Document type: agreement; Parties involved: Nehk, Akheria, Ghriy, Rani Bajoria, Abhol Cong; No document ID visible; No date visible; No monetary amounts mentioned; Key clauses include: proper books of account to be kept; restrictions on employing partnership assets without consent; partners must pay their debts; restrictions on transferring partnership shares; conditions for dissolution of the partnership; provisions for retirement of partners; visible stamp: 'KHARIA & COMPANY' (top), 'MUMBAI' (center), 'CHARTERED ACCOUNTANTS' (bottom, curved around).",
+                    "records": [],
+                    "selection_score": 0.1276,
+                    "rag_score": 0.3189,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_8",
+                    "document_name": "GST Compliance Advisory Letter – Anvitech Solutions LLP",
+                    "status": "PARTIAL",
+                    "pages": [
+                        8
+                    ],
+                    "summary": "Document type: letter; Company name: Anvitech Solutions LLP; Page 8 of 61; GST Compliance includes preparation and filing of GSTR-1, GSTR-3B, and other applicable GST returns; Monthly/quarterly reconciliation of ITC with GSTR-2B; Assistance with GST registration/amendments; Advisory on GST matters, rate applicability, and compliance; Support in replying to GST departmental notices; Income Tax Compliance includes preparation and filing of Income Tax Returns (ITR) of the company/firm; Calculation of advance tax liability; Preparation and submission of Tax Audit Report (if applicable); Assistance in income-tax assessments and notices; Payroll & Form 16 includes monthly payroll preparation (if required); TDS computation on salaries; Preparation and issuance of Form 16 to employees; General Taxation & Advisory includes ongoing advisory on direct and indirect tax matters; Tax planning, compliance management, and guidance on statutory changes; Representation before tax authorities (with prior approval); Acceptance section requests signing and returning a copy of the letter; Authorize Signatory: Renu Umesh Tiwari, Director; Address: C-403, Hetal Arch, Opp. Natraj Market, S V Road, Malad (West), Mumbai 400064.",
+                    "records": [],
+                    "selection_score": 0.1262,
+                    "rag_score": 0.3156,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_44",
+                    "document_name": "Partnership Registration – CA Rahul Sushil Kheria – 25 May 1990",
+                    "status": "PARTIAL",
+                    "pages": [
+                        44
+                    ],
+                    "summary": "Document type is unknown; party name is CA RAHUL SUSHIL KHERIA; document ID is 175161; date of birth is 25/May/1990; qualification is BACHELOR OF COMMERCE (B.COM); enrolment date is 08/Sep/2016; current COP date is 26/Jul/2018; father's name is SUSHIL LOKNATH KHERIA; fellowship date is 14/Jan/2022; holding COP status is Yes; employment status is No; personal practice status is No; partnership status is Yes; address details include ROOM NO 34, 5TH FLOOR, SUJATA NIKETAN CHS LTD RANI SATI MARG, MALAD EAST, MUMBAI (MAHARASHTRA) INDIA - 400097; mobile number is 9619831080; email is RAHUL.KHERIA41@GMAIL.COM.",
+                    "records": [],
+                    "selection_score": 0.1249,
+                    "rag_score": 0.3123,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_52",
+                    "document_name": "Letter of Intent – Kheria & Company – 12 Jan 2026",
+                    "status": "PARTIAL",
+                    "pages": [
+                        52
+                    ],
+                    "summary": "Document type: letter; Issuer: Kheria & Company; Date: 12/01/2026; Page number: 52 of 61; Contains signature line for Rahul Sushil Kheria, Partner; Membership No: 175161; Office address: 513, 5th Floor, Kosha Kommercial Komplex, Behind Laxmi Narayan Shopping Centre, Poddar Road, Malad (East), Mumbai-400 097; Mobile No: 9619831080, 9321498143; Email: kheriaandcompany@gmail.com.",
+                    "records": [],
+                    "selection_score": 0.1236,
+                    "rag_score": 0.309,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_61",
+                    "document_name": "Udyam Registration Certificate – The M – 02 Aug 2022",
+                    "status": "PARTIAL",
+                    "pages": [
+                        61
+                    ],
+                    "summary": "Document type: Registration Certificate; Issuer: M/o MSME; Document ID: Udyam Registration Certificate; Date of registration: 02/08/2022; Disclaimer: This is a computer generated statement, no signature required; Printed from: https://udyamregistration.gov.in; Date of printing: 25/09/2024; For assistance, contact District Industries Centre: MUMBAI SUBURBAN (MAHARASHTRA) and MSME-DFO: MUMBAI (MAHARASHTRA).",
+                    "records": [],
+                    "selection_score": 0.1236,
+                    "rag_score": 0.309,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_7",
+                    "document_name": "Letter of Appointment – M/s Kheria & Company – 20 Aug 2023",
+                    "status": "PARTIAL",
+                    "pages": [
+                        7
+                    ],
+                    "summary": "Document type: letter; Issuer: M/s Anvitech Solutions LLP; Subject: Appointment as Chartered Accountant for Financial Advisory Services; Date: 20/08/2023; Appointment effective from: 01/09/2023 to 31/10/2026; Appointed party: M/s Kheria and Company Chartered Accountants; Scope of work includes TDS & TCS Compliance, monthly computation of TDS/TCS liability, preparation and filing of quarterly TDS/TCS returns, generation and correction of Form 16/16A, TDS/TCS reconciliation with 26AS, and assistance in responding to TDS notices; No signatures, rubber stamps, company seals, or certification text visible.",
+                    "records": [],
+                    "selection_score": 0.1222,
+                    "rag_score": 0.3056,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_39",
+                    "document_name": "Form – KHERIA & COMPANY – 27AATFK8871E1ZO",
+                    "status": "PARTIAL",
+                    "pages": [
+                        39
+                    ],
+                    "summary": "Document type: form; Company name: KHERIA & COMPANY; Document ID: 27AATFK8871E1ZO; Total number of additional places of business in the state: 0.",
+                    "records": [],
+                    "selection_score": 0.1196,
+                    "rag_score": 0.299,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_46",
+                    "document_name": "Partnership Status Certificate – CA NEHA GOURAV KHERIA – 31 Aug 2015",
+                    "status": "PARTIAL",
+                    "pages": [
+                        46
+                    ],
+                    "summary": "Document type is unknown; primary subject is CA NEHA GOURAV KHERIA; document ID is BGJPR0418P; enrolment date is 31/Aug/2015; qualifications include Bachelor of Commerce; holding COP is Yes; employment status is No; personal practice is No; partnership status is Yes; address includes 34 5TH FLOOR SUJATA NIKETAN CHS LTD, RANI SATI ROAD MALAD EAST; contact number is 8340689051; no signatures, rubber stamps, or company seals visible.",
+                    "records": [],
+                    "selection_score": 0.1183,
+                    "rag_score": 0.2957,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_42",
+                    "document_name": "Membership Status Document – CA GOURAV KHERIA – 22 Sep 1989",
+                    "status": "PARTIAL",
+                    "pages": [
+                        42
+                    ],
+                    "summary": "Document type is unknown; primary subject is CA GOURAV KHERIA; document ID is 175162; date of birth is 22/Sep/1989; qualification details and membership status are provided; holding COP is Yes; employment status is No; personal practice is No; address details include FLAT NO 34 5TH FLOOR SUJATA NIKETAN CHS, RANI SATI ROAD, MALAD EAST, MUMBAI (MAHARASHTRA) INDIA - 400097; mobile number is 9321498143; email is GKHERIA@REDIFFMAIL.COM; fellowship date is 13/Jan/2022; no signatures, stamps, or certification text visible.",
+                    "records": [],
+                    "selection_score": 0.117,
+                    "rag_score": 0.2924,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_49",
+                    "document_name": "Letter of Certification – Kheria & Company – JNPA – 12 Jan 2026",
+                    "status": "PARTIAL",
+                    "pages": [
+                        49
+                    ],
+                    "summary": "Document type: letter; Party names: Kheria & Company, Rahul Sushil Kheria, JNPA, Kunal Pasi, Hiren Choksi; Date: 12/01/2026; Certification text: We certify that all information furnished by me / us is true & correct; Signature lines visible for Rahul Sushil Kheria (Partner) and witnesses Kunal Pasi and Hiren Choksi; Place: Mumbai; Office address: 513, 5th Floor, Kosha Kommercial Komplex, Behind Laxmi Narayan Shopping Centre, Poddar Road, Malad (East), Mumbai-400 097; Mobile No: 9619831080, 9321498143; Email: kheriaandcompany@gmail.com.",
+                    "records": [],
+                    "selection_score": 0.117,
+                    "rag_score": 0.2924,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_54",
+                    "document_name": "Partnership Agreement – Kheria & Company – 08 Aug 2018",
+                    "status": "PARTIAL",
+                    "pages": [
+                        54
+                    ],
+                    "summary": "Document type is an agreement; parties involved are Kheria & Company as the Proprietor, Rahul, Gourav, Rani Beyoria, and Abha Cong as partners; effective dates for partnership admissions are 08th August 2018 for Rahul, 30th December 2021 for Gourav, and 25th December 2024 for Rani and Abha; the partnership commenced upon confirmation of Reconstitution of Firm by ICAI; addresses include Office no. 513, 5th Floor, Kosha Kommmercial Komplex, Malad East Mumbai 400 097 (Head Office) and multiple branch offices; practice includes auditing, forensic auditing, direct and indirect taxation, liquidation work, valuation, management consultancy services, arbitration, internal audit, and other CA regulated activities; visible rubber stamp includes",
+                    "records": [],
+                    "selection_score": 0.1156,
+                    "rag_score": 0.289,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_53",
+                    "document_name": "Deed of Partnership – KHERIA & COMPANY – 25 Dec 2024",
+                    "status": "PARTIAL",
+                    "pages": [
+                        53
+                    ],
+                    "summary": "Document type: Deed of Partnership; Parties involved: Neha Gourav Kheria, Rahul Sushil Kheria, Gourav Kheria, Rani Bajoria, Abha Garg; Document ID: 30AB 698820; Date: 25th December, 2024; Total amount: Rs. 100; Contains signatures of NehaK, Bkheria, gkheri, Rani Bajoria, AbhaGarg; Includes a revenue department stamp with text in Hindi and English; Seal text: KHERIA & COMPANY, Location: MUMBAI, Profession: CHARTERED ACCOUNTANTS.",
+                    "records": [],
+                    "selection_score": 0.1143,
+                    "rag_score": 0.2857,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_38",
+                    "document_name": "GST Registration Certificate – KHERIA & COMPANY – 27AATFK8871E1ZO",
+                    "status": "PARTIAL",
+                    "pages": [
+                        38
+                    ],
+                    "summary": "Document type: Registration Certificate; Company name: KHERIA & COMPANY; Document ID: 27AATFK8871E1ZO; Date of issue: 30/10/2024; Type of Registration: Regular; Date of Validity: From 15/11/2021 To Not Applicable; Address of Principal Place of Business: 5th FLOOR, 513, Kosha Kommercial Komplex, PODDAR PARK ROAD, MALAD EAST, Mumbai, Mumbai Suburban, Maharashtra, PIN Code: 400097; The registration certificate is required to be prominently displayed at all places of Business/Office(s) in the State; Signature Not Verified; Digitally signed by DS GOODS AND SERVICES TAX NETWORK; Date: 2024.10.30 06:17:59 IST.",
+                    "records": [],
+                    "selection_score": 0.113,
+                    "rag_score": 0.2824,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_58",
+                    "document_name": "Partnership Agreement – KHERIA & COMPANY – Neha et al.",
+                    "status": "PARTIAL",
+                    "pages": [
+                        58
+                    ],
+                    "summary": "Document type: Partnership Agreement; Parties involved: Neha, Bkheria, gkhiy, Rani Bajoria, Abhrajit Goyal; Page number: 58 of 61; Clauses include: admission of new partners, rights to be a director or author, restrictions on opening individual firms, rights to add or remove partners, tenant rights, and arbitration provisions; No document ID or date visible; Contains a circular seal with text 'KHERIA & COMPANY', 'MUMBAI', and 'CHARTERED ACCOUNTANTS'; Signatures visible for all five partners.",
+                    "records": [],
+                    "selection_score": 0.113,
+                    "rag_score": 0.2824,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_55",
+                    "document_name": "Partnership Deed – KHERIA & COMPANY – 18 May 2017",
+                    "status": "PARTIAL",
+                    "pages": [
+                        55
+                    ],
+                    "summary": "This is a page from a partnership agreement detailing the operations and capital contributions of partners Neha, Rahul, Gourav, Rani, and Abha; the capital accounts of Neha (credited on 18th May 2017), Rahul (credited on 8th August 2018), and Gourav (credited on 30th December 2021) are mentioned; the capital contribution of the Fourth Part & Fifth Part is noted as initial Branch Opening Expenses; the bankers are identified as 'The Malad Sahakari Bank' & 'YES Bank'; separate bank accounts will be maintained for Head Office and Branch Office; remuneration for partners based on book profits is outlined with specific ratios: Neha 25%, Rahul 40%, Gourav 25%, Rani 5%, Abha 5%; total remuneration ratio is 100%; signatures of Neha, Ruchi, Gourav, Rani Bajoria, and Abha are visible; a stamp from KHERIA & COMPANY CHARTERED ACCOUNTANTS MUMBAI is present.",
+                    "records": [],
+                    "selection_score": 0.1116,
+                    "rag_score": 0.2791,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                },
+                {
+                    "document_id": "Kheria__Company_merged_with_Page_Numbers.pdf::doc_40",
+                    "document_name": "Partnership Details – KHERIA & COMPANY – 27AATFK8871E1ZO",
+                    "status": "PARTIAL",
+                    "pages": [
+                        40
+                    ],
+                    "summary": "Document type is unknown; Company name is KHERIA & COMPANY; Document ID is 27AATFK8871E1ZO; No date is visible; No monetary amounts are mentioned; Page contains details of managing/authorized partners including names RcAHUL SUSHIL KHERIA and NEHA GOURAV KHERIA, both designated as partners and residents of Maharashtra; No signature lines, rubber stamps, company seals, or certification text are visible.",
+                    "records": [],
+                    "selection_score": 0.1103,
+                    "rag_score": 0.2757,
+                    "llm_score": 0.0,
+                    "requirement_document": "Audited Financial Statements",
+                    "mode": "EXPLICIT",
+                    "entity_type": "FinancialYear"
+                }
+            ]
+        }
+    ]
+}
