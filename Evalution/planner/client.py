@@ -52,7 +52,7 @@ class LLMClient:
             config=LLMConfig(
                 api_key="sk-...",
                 base_url="https://api.openai.com/v1",
-                model="gpt-4o",
+                model="openai/gpt-4o",
             )
         )
         response = client.chat(

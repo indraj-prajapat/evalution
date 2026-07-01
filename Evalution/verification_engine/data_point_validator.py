@@ -217,7 +217,7 @@ STEP 7 - ASSIGN CONFIDENCE:
   - Below 0.3: Reject instead
 
 STEP 8 - PROVIDE CLEAR REASONING:
-  - For accepted: "Field matches '{target}', period verified as {period} from {source}, value is valid number from {doc_type}"
+  - For accepted: "Field matches '{target_field}', period verified as {period} from {source}, value is valid number from {doc_type}"
   - For rejected: Be specific - "Rejected: snippet shows 'Total Assets' not turnover" or "Rejected: document is EMD certificate, doesn't contain turnover data" or "Rejected: period is FY2021-22 (from document name) but requirement needs FY2022-23"
 
 Respond in JSON format:
