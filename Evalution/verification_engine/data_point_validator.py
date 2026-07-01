@@ -269,9 +269,11 @@ class DataPointValidator:
     - Invalid/malformed values are filtered out
     """
     
-    def __init__(self, api_key: Optional[str] = None, model: str = "gpt-4o-mini"):
+    def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
+        from Evalution.client import get_llm_model
+        
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY", "") or os.getenv("OPENAI_API_KEY", "")
-        self.model = model
+        self.model = model or get_llm_model()
         self._client = None
     
     def _get_client(self):

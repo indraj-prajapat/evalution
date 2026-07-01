@@ -27,8 +27,8 @@ def main():
     parser.add_argument("-n", "--company-name", default="", help="Company name.")
     parser.add_argument("-o", "--output", default=None, help="Output path for report JSON.")
     parser.add_argument("-p", "--print", action="store_true", dest="print_report", help="Print report.")
-    parser.add_argument("--no-llm", action="store_true", help="Disable GPT-4o-mini evaluation.")
-    parser.add_argument("--model", default="gpt-4o-mini", help="OpenAI model name.")
+    parser.add_argument("--no-llm", action="store_true", help="Disable LLM evaluation.")
+    parser.add_argument("--model", default=None, help="Model name (defaults to OPENROUTER_MODEL from .env).")
     parser.add_argument("--no-color", action="store_true", help="Disable colored output.")
 
     args = parser.parse_args()

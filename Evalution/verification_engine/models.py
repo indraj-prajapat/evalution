@@ -229,7 +229,7 @@ class LLMEvaluation:
     recommendations: list[str] = field(default_factory=list)
     requirement_analysis: dict = field(default_factory=dict)
     python_verdict_agreement: str = ""
-    model_used: str = "gpt-4o-mini"
+    model_used: str = ""
     raw_response: str = ""
 
     def to_dict(self) -> dict:
